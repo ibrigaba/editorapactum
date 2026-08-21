@@ -704,12 +704,40 @@ function openBookModal(bookId) {
         <a href="${amazonUrl}" target="_blank" rel="noopener" class="btn btn-primary modal-btn-buy">
           Adquirir na Amazon Kindle
         </a>
+        <button class="btn btn-ghost modal-btn-share" onclick="copyBookLink('${amazonUrl}')" title="Copiar link direto do livro">
+          Copiar Link
+        </button>
       </div>
     </div>
   `;
 
   modalOverlay.classList.add("active");
   document.body.style.overflow = "hidden";
+}
+
+function copyBookLink(url) {
+  if (navigator.clipboard) {
+    navigator.clipboard.writeText(url).then(() => {
+      showToast("Link copiado com sucesso! 📋");
+    }).catch(() => {
+      prompt("Copie o link abaixo:", url);
+    });
+  } else {
+    prompt("Copie o link abaixo:", url);
+  }
+}
+
+function showToast(msg) {
+  let toast = document.getElementById("pactumToast");
+  if (!toast) {
+    toast = document.createElement("div");
+    toast.id = "pactumToast";
+    toast.className = "pactum-toast";
+    document.body.appendChild(toast);
+  }
+  toast.textContent = msg;
+  toast.classList.add("show");
+  setTimeout(() => toast.classList.remove("show"), 3000);
 }
 
 function closeBookModal() {
