@@ -1,0 +1,6 @@
+# Ignorar arquivos temporários
+.DS_Store
+Thumbs.db
+*.bak
+*.tmp
+*.ps1

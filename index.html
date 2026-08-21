@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editora Pactum — Tradição • Teologia • Excelência</title>
+  <meta name="description" content="Editora Pactum: especializada em clássicos puritanos e bíblias interlineares hebraico/grego. Obras de alto rigor teológico e exegético para o leitor cristão.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Cinzel+Decorative:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVEGAÇÃO -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <img src="logo.png" alt="Editora Pactum" class="nav-logo-img">
+        <span class="nav-logo-text">Editora Pactum</span>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#sobre">Sobre</a>
+        <a href="#catalogo">Catálogo</a>
+        <a href="#autores">Autores</a>
+        <a href="#contato">Contato</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu Principal">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO PRINCIPAL -->
+  <header class="hero" id="hero">
+    <canvas class="hero-canvas" id="heroCanvas"></canvas>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-logo-wrap">
+        <img src="logo.png" alt="Selo da Editora Pactum" class="hero-logo">
+      </div>
+      <h1 class="hero-title">EDITORA PACTUM</h1>
+      <p class="hero-tagline">
+        <span class="tgd">✦</span> Tradição <span class="tgd">✦</span> Teologia <span class="tgd">✦</span> Excelência
+      </p>
+      <p class="hero-subtitle">
+        Resgatando os tesouros do puritanismo inglês e a riqueza dos textos bíblicos originais em edições rigorosamente traduzidas e comentadas.
+      </p>
+      <div class="hero-ctas">
+        <a href="#catalogo" class="btn btn-primary">Explorar Catálogo</a>
+        <a href="#sobre" class="btn btn-ghost">Nossa Vocação</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <a href="#catalogo" class="scroll-indicator" style="text-decoration:none;">
+        <span>Descobrir Obras</span>
+        <div class="scroll-arrow"></div>
+      </a>
+    </div>
+  </header>
+
+  <!-- ESTATÍSTICAS -->
+  <section class="stats-bar" aria-label="Estatísticas da Editora">
+    <div class="stats-container">
+      <div class="stat-item">
+        <span class="stat-number" data-count="32">0</span>
+        <span class="stat-label">Títulos Publicados</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-number" data-count="5">0</span>
+        <span class="stat-label">Idiomas & Dialetos</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-number" data-count="15">0</span>
+        <span class="stat-label">Autores Clássicos</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-number" data-count="1998">0</span>
+        <span class="stat-label">Tradição Reformada</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE NÓS -->
+  <section class="sobre" id="sobre">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-ornament">✦ ✦ ✦</div>
+        <h2 class="section-title">Nossa Vocação</h2>
+        <div class="section-rule"></div>
+      </div>
+      <div class="sobre-grid">
+        <div class="sobre-text">
+          <p class="lead-text">
+            A Editora Pactum nasceu do compromisso inegociável com a excelência teológica e o rigor acadêmico, trazendo ao leitor lusófono as obras mais profundas da herança reformada e puritana.
+          </p>
+          <p>
+            Nosso catálogo é fundamentado em duas grandes frentes: a <strong>Coleção Clássicos Puritanos</strong> — vertendo ao português tratados seminais de mestres como Thomas Watson, Richard Sibbes, Thomas Goodwin, Thomas Brooks e John Flavel — e as <strong>Bíblias Interlineares</strong>, com aparato filológico completo, texto massorético hebraico, grego koiné, transliteração fonética e notas exegéticas.
+          </p>
+          <p>
+            Cada livro é preparado com acabamento minucioso, preservando o calor devocional dos originais sem abrir mão da fidelidade exegética.
+          </p>
+        </div>
+        <div class="sobre-pillars">
+          <div class="pillar">
+            <div class="pillar-icon">📜</div>
+            <h3>Clássicos Puritanos</h3>
+            <p>Traduções inéditas e completas dos grandes teólogos dos séculos XVI e XVII, enriquecidas com biografias e contexto histórico.</p>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon">📖</div>
+            <h3>Bíblias Interlineares</h3>
+            <p>Textos hebraicos e gregos com transliteração fonética acadêmica e tradução literal contextual, além de edições em espanhol e francês.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATÁLOGO -->
+  <section class="catalogo" id="catalogo">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-ornament">✦ ✦ ✦</div>
+        <h2 class="section-title">Catálogo de Livros</h2>
+        <div class="section-rule"></div>
+        <p class="section-desc">Explore nossa biblioteca completa de clássicos e ferramentas exegéticas</p>
+      </div>
+
+      <!-- BUSCA E FILTROS -->
+      <div class="search-and-filter">
+        <div class="search-box-wrap">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="searchInput" class="search-input" placeholder="Buscar por título, autor (Watson, Sibbes...), ASIN ou palavra-chave..." autocomplete="off">
+        </div>
+        <div class="filter-tabs">
+          <button class="filter-btn active" data-filter="todos" id="filter-todos">Todos os Livros (32)</button>
+          <button class="filter-btn" data-filter="puritano" id="filter-puritano">Clássicos Puritanos (22)</button>
+          <button class="filter-btn" data-filter="interlinear" id="filter-interlinear">Bíblias Interlineares (7)</button>
+          <button class="filter-btn" data-filter="outros" id="filter-outros">Internacional (3)</button>
+        </div>
+      </div>
+
+      <!-- GRID DE LIVROS -->
+      <div class="books-grid" id="booksGrid"></div>
+    </div>
+  </section>
+
+  <!-- AUTORES EM DESTAQUE -->
+  <section class="autores" id="autores">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-ornament">✦ ✦ ✦</div>
+        <h2 class="section-title">Mestres & Autores</h2>
+        <div class="section-rule"></div>
+        <p class="section-desc">Clique em um autor para filtrar imediatamente as suas obras no catálogo</p>
+      </div>
+      <div class="autores-grid" id="autoresGrid"></div>
+    </div>
+  </section>
+
+  <!-- BANNER AMAZON -->
+  <section class="amazon-banner">
+    <div class="container">
+      <div class="banner-content">
+        <div class="banner-text">
+          <h2>Disponível na Amazon Kindle</h2>
+          <p>Adquira seus eBooks com entrega instantânea em seu dispositivo Kindle, iPad, iPhone, Android ou computador.</p>
+        </div>
+        <a href="https://www.amazon.com.br/s?i=digital-text&rh=p_27%3AEditora+Pactum&tag=editorapactum-20" target="_blank" rel="noopener" class="btn btn-amazon" id="btn-amazon">
+          Ver Catálogo na Amazon
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- RODAPÉ -->
+  <footer class="footer" id="contato">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <img src="logo.png" alt="Editora Pactum" class="footer-logo">
+            <p>Editora Pactum — Tradição Teológica Reformada.</p>
+            <p class="footer-quote"><em>"Seca-se a erva, e cai a flor, porém a palavra de nosso Deus subsiste eternamente."</em><br>— Isaías 40:8</p>
+          </div>
+          <div class="footer-col">
+            <h4>Coleções</h4>
+            <ul>
+              <li><a href="#catalogo" onclick="filterByCategory('puritano')">Clássicos Puritanos</a></li>
+              <li><a href="#catalogo" onclick="filterByCategory('interlinear')">Bíblias Interlineares</a></li>
+              <li><a href="#catalogo" onclick="filterByCategory('outros')">Edições Internacionais</a></li>
+              <li><a href="#catalogo" onclick="filterByCategory('todos')">Catálogo Geral</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Principais Autores</h4>
+            <ul>
+              <li><a href="#catalogo" onclick="filterByAuthor('Thomas Watson')">Thomas Watson</a></li>
+              <li><a href="#catalogo" onclick="filterByAuthor('Richard Sibbes')">Richard Sibbes</a></li>
+              <li><a href="#catalogo" onclick="filterByAuthor('Thomas Goodwin')">Thomas Goodwin</a></li>
+              <li><a href="#catalogo" onclick="filterByAuthor('Thomas Brooks')">Thomas Brooks</a></li>
+              <li><a href="#catalogo" onclick="filterByAuthor('John Flavel')">John Flavel</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Plataformas</h4>
+            <ul>
+              <li><a href="https://www.amazon.com.br/s?i=digital-text&rh=p_27%3AEditora+Pactum&tag=editorapactum-20" target="_blank" rel="noopener">Loja Amazon Brasil</a></li>
+              <li><a href="https://www.amazon.com.br/kindle-dbs/ku/ku-landing?tag=editorapactum-20" target="_blank" rel="noopener">Kindle Unlimited</a></li>
+              <li><a href="https://kdp.amazon.com" target="_blank" rel="noopener">KDP Select</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 1998–2026 Editora Pactum. Todos os direitos reservados. Soli Deo Gloria.</p>
+        <p class="footer-est">TRADICIONAL • TEOLÓGICA • EXEGÉTICA</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL DE DETALHES DO LIVRO -->
+  <div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true">
+    <div class="modal" id="modal">
+      <button class="modal-close" id="modalClose" aria-label="Fechar Modal">✕</button>
+      <div class="modal-inner" id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
