@@ -1,338 +1,178 @@
 /**
- * EDITORA PACTUM — BANCO DE CITAÇÕES DOS EBOOKS
- * 4+ citações memoráveis por obra + 55 citações para o carousel do Home
- * Carregue este arquivo ANTES de script.js no index.html
+ * EDITORA PACTUM — CITAÇÕES EXTRAÍDAS DOS EBOOKS (gerado automaticamente)
+ * Livros: 14 | Modal: 84 | Carousel: 42
  */
 
-// ==========================================================================
-// CITAÇÕES POR LIVRO (4+ por ebook, indexadas pelo ID)
-// ==========================================================================
 const CITACOES_POR_LIVRO = {
+ "arte-contentamento-divino": [
+ "A humildade é como o chumbo na rede, que mantém a alma baixa quando ela se eleva pela paixão; e o contentamento é como a cortiça, que mantém o coração erguido quando ele está afundando sob o desânimo.",
+ "Um cristão tem, vindo de dentro, aquilo que é capaz de sustentá-lo; aquela força de fé e boa esperança pela graça, que sustenta o seu coração na deficiência dos confortos exteriores.",
+ "O contentamento é o arco espiritual, ou pilar da alma; ele capacita o homem a suportar fardos; aquele cujo coração está pronto a desfalecer sob o menor pecado, em virtude disto, possui um espírito invencível sob os sofrimentos.",
+ "Assim como a tristeza está situada no espírito — “o coração conhece a sua própria amargura” — assim o contentamento reside dentro da alma e não depende de coisas externas.",
+ "É triste ter o vivo e o morto atados um ao outro; contudo, não deixe seu coração inquietar-se com descontentamento; lamente pelos pecados dele, mas não murmure.",
+ "“Deus é amor”; por isso, Ele é chamado, às vezes de nos gravar na “palma de suas mãos”, para que nunca estejamos fora de sua visão; e de nos carregar em seu seio, perto de seu coração.",
+ ],
 
-  // ─── BÍBLIAS INTERLINEARES ────────────────────────────────────────────
+ "carta-privilegios-crente": [
+ "A fé é uma graça que vivifica o coração Ela é a artéria vital da alma: \"O justo viverá pela sua fé\".",
+ "A fé humilha a alma; ela tem um duplo aspecto: olha para o pecado, e a visão do pecado humilha; olha para a graça gratuita, e a visão da misericórdia humilha.",
+ "A fé dá paz na tribulação A fé é uma graça que pacifica o coração porque é uma graça que o assegura.",
+ "A fé confere força ao sofrimento, provê a alma com promessas para o sofrimento, reúne as graças necessárias para o sofrimento e propõe as recompensas do sofrimento.",
+ "Aquele cujo coração foi divinamente tocado pelo amor de Deus não se preocupa tanto em receber talentos de ouro, mas em multiplicar os talentos da graça.",
+ "Nada pode derreter tanto o coração de um pecador quanto o amor de Deus e o sangue de Cristo.",
+ ],
 
-  "pentateuco-interlinear": [
-    "Cada palavra hebraica do Pentateuco é uma janela aberta para o coração do pacto eterno de Deus com Seu povo.",
-    "A transliteração fonética transforma o leitor em ouvinte das mesmas sílabas que Moisés proclamou no deserto.",
-    "No texto massorético reside a voz original da revelação: cada vogal, cada acento, cada nuança teológica preservada por milênios.",
-    "Estudar o Pentateuco no hebraico original é caminhar pelas mesmas veredas linguísticas que os patriarcas percorreram.",
-    "Bereshit — No princípio — a primeira palavra hebraica já contém em si a semente de toda a teologia bíblica."
-  ],
+ "chave-secreta-ceu": [
+ "Tais orações nunca alcançam os ouvidos de Deus, nem deleitam o Seu coração, nem jamais serão guardadas no Seu seio, se não forem direcionadas para a Sua glória.",
+ "Ao orar com muitos, há diversos elementos que podem subornar e provocar um coração carnal, como o orgulho, a vanglória, o amor aos aplausos ou o desejo de obter renome.",
+ "Quando as concupiscências predominantes são subjugadas, quando os pecados de estimação jazem mortos na alma, então o Espírito vem e sela o amor, a vida e a glória para a alma.",
+ "A lei real ordena: \"Amarás e servirás ao Senhor, teu Deus, de todo o teu coração e de toda a tua alma\".",
+ "O próprio pensamento do pecado, se não for combatido, irromperá em ação; a ação, em costume; o costume, em hábito; e, então, corpo e alma estarão irremediavelmente perdidos por toda a eternidade.",
+ "Paulo não estava há muito tempo em oração secreta antes que lhe fosse revelado que ele era um vaso escolhido, e antes que fosse cheio dos dons, graças e consolos do Espírito Santo.",
+ ],
 
-  "biblia-interlinear-hg-vol1": [
-    "Quando o Hebraico Massorético e a Septuaginta Grega se encontram no mesmo versículo, a riqueza da revelação divina se multiplica.",
-    "A comparação interlinear entre hebraico e grego revela camadas de significado que nenhuma tradução isolada pode alcançar.",
-    "A Septuaginta foi a Bíblia dos apóstolos; confrontá-la com o texto hebraico é ouvir o diálogo entre dois mundos da fé.",
-    "Cada palavra alinhada entre hebraico e grego é uma ponte entre a revelação original e a Igreja primitiva."
-  ],
+ "cristao-silencioso": [
+ "Se, em todas as tuas tribulações, o teu coração for levado a exercitar a fé nas promessas, as tuas tribulações procedem do amor.",
+ "Deus crava muitas lanças afiadas através do coração de muitos pecadores, e ainda assim eles não sentem nada, não se queixam de nada: as almas desses homens sangrarão até a morte.",
+ "Se tens pecado contra mais luz, mais amor, mais misericórdias, mais experiências e mais promessas do que outros, não é de admirar que as tuas aflições sejam maiores.",
+ "O silêncio é o guardião de todas as virtudes; ele ampara a fé, a esperança, o amor, a humildade, a abnegação, e assim por diante.",
+ "Assim, a tentação põe em exercício a fé, o amor, o arrependimento, a esperança, o santo temor e a piedosa tristeza.",
+ "Assim como no primeiro caos estavam as sementes de todas as criaturas, no coração do murmurador não estão apenas as sementes de todo pecado, mas uma operação vivaz de todo pecado.",
+ ],
 
-  "biblia-profetas-maiores": [
-    "Isaías viu a glória que encheu o templo; no hebraico original, cada termo ecoa a santidade tremenda do Deus Altíssimo.",
-    "Os oráculos de Jeremias, lidos em sua língua natal, revelam a agonia do profeta e a compaixão inexaurível de Javé.",
-    "No texto hebraico de Ezequiel, a visão do vale de ossos secos ganha uma força visceral que tradução alguma reproduz plenamente.",
-    "Daniel profetizou em hebraico e aramaico; no texto original, cada reino e cada visão carregam precisão profética sobrenatural."
-  ],
+ "quinhao-tortuoso": [
+ "A adversidade no quinhão dá origem a muitos atos de fé, esperança, amor, abnegação, resignação e outras graças; a muitos suspiros, anseios e gemidos celestiais que, de outra forma, não seriam produzidos.",
+ "O orgulho de seu coração os expõe particularmente às cruzes Um coração orgulhoso criará uma cruz para si mesmo onde uma alma humilde não encontraria nenhuma.",
+ "Não é o ser lançado em circunstâncias de humilhação, pela Providência de Deus, mas o abaixamento dos nossos espíritos sob elas, pela graça de Deus, que nos coloca dentro do alcance desta promessa.",
+ "Da luta sem graça contra o quinhão tortuoso, voltai-vos para a luta contra o vosso próprio coração, a fim de levá-lo a submeter-se, crendo na promessa e utilizando os meios para isso, afligindo-vos de coração por não conseguirdes submeter-vos.",
+ "O coração e a vontade orgulhosos, incapazes de se submeter à cruz ou de suportar ser controlados, levantam-se contra ela e lutam pela supremacia com toda a força de suas paixões não mortificadas.",
+ "Por outro lado, nunca há uma revolta do coração orgulhoso contra o quinhão, nem uma tentativa infiel de moldá-lo à nossa vontade — quer tenha sucesso ou não — que não passe por uma má obra diante de Deus.",
+ ],
 
-  "biblia-livros-historicos": [
-    "De Josué a Ester, o texto hebraico narra a providência soberana de Deus conduzindo Israel através de impérios e desertos.",
-    "Cada batalha, cada juiz, cada rei registrado no hebraico original testemunha o governo absoluto de Javé sobre a história.",
-    "O livro de Rute, lido no hebraico, revela uma ternura linguística que espelha a redenção do parente-redentor.",
-    "A narrativa histórica de Israel é teologia em movimento: Deus agindo, corrigindo, restaurando e cumprindo Suas promessas."
-  ],
+ "filho-luz-caminhando-trevas": [
+ "Se há dúvidas de que não há graça no coração, então o coração não descansa até que alguma graça em verdade seja evidenciada, e alguma promessa seja feita, ou alguma graça seja aplicada ao íntimo.",
+ "O coração que carece de conhecimento não é bom, diz Salomão, e, portanto, andar em trevas é acompanhado de andar na vaidade da mente",
+ "Se não considerásseis isso em vosso coração, seria um sinal de que não tendes graça; de que não fizestes Dele a vossa porção, se pudésseis suportar a Sua ausência sem lamentar.",
+ "O mesmo ocorreu com a igreja, em Lamentações 3:17-18: seu coração estava profundamente possuído por uma apreensão desesperada; \"Pereceu a minha esperança, bem como a minha expectativa do Senhor\", dizia ela.",
+ "Ela cospe o seu absinto e retira as suas próprias palavras; e agora que seu coração começou a ouvir o que poderia consolá-la, imediatamente começou a ter esperança.",
+ "Ocorre com os homens, no que diz respeito à perturbação da mente pela culpa do pecado, o mesmo que ocorre com o poder dele — na justificação, assim como na santificação.",
+ ],
 
-  "biblia-profetas-menores": [
-    "Os doze profetas menores são menores apenas em extensão; sua mensagem hebraica carrega a autoridade infinita do Deus vivo.",
-    "Oseias clama no hebraico original com a dor de um amor traído e a esperança de uma redenção inabalável.",
-    "Malaquias encerra o Antigo Testamento com promessas que reverberam até o Novo: o Sol da Justiça nascerá com cura em Suas asas.",
-    "No hebraico de Habacuque, a declaração 'o justo viverá pela fé' ressoa com uma clareza que mudou a história da Igreja."
-  ],
+ "exposicoes-efesios": [
+ "Nossa salvação não depende apenas da misericórdia, mas do amor; e não apenas do amor de sua natureza, mas de um ato de amor, um amor fixado em nós com sua vontade e coração.",
+ "Foi o seu amor, ou uma graça no coração de Jesus Cristo, que o levou a tornar-se o autor e o conquistador de toda a salvação para nós.",
+ "A livre graça nada pode dizer para se magnificar que a fé no coração de um crente, operada pelo Espírito, não possa acolher e dar a Ele a glória de sua própria maneira.",
+ "Pois esta graça se manifestou em promessas; assim como o original reside no coração de Deus, Ele fez uma cópia de Si mesmo nas promessas, e nada responde a isso senão a fé.",
+ "Ora, se essa salvação, o direito à salvação, é um dom completo que é dado de uma só vez, então não havia graça que fosse tão adequada no coração do homem para corresponder a este dom quanto a fé.",
+ "Isto deve tomar o coração de tal modo que vossas almas tenham sempre a impressão, a imagem da graça daquela Pessoa, de Sua mansidão, santidade e temor do Senhor.",
+ ],
 
-  "biblia-livros-poeticos": [
-    "Os Salmos em hebraico são a voz da alma humana dialogando com a eternidade em metros e paralelismos divinos.",
-    "Provérbios no texto original revela jogos de palavras e aliterações que são verdadeiras joias literárias do Espírito Santo.",
-    "O Eclesiastes hebraico confronta a vaidade com uma honestidade brutal que só a sabedoria divina pode conceder.",
-    "O Cântico dos Cânticos, lido no hebraico, é a mais sublime poesia de amor já composta pela pena inspirada."
-  ],
+ "retorno-oracoes": [
+ "De maneira especial, ela é oposta à santidade, e tais pecados são obras da carne manifestas até mesmo à natureza; portanto, quando se cai neles frequentemente, manifesta-se que o coração não passa de carne.",
+ "Se tu és Seu filho e tais degelos não forem suficientes, Ele usará, ao final, grandes aflições para divorciar teu coração do teu pecado; Seu amor, de uma maneira ou de outra, te vencerá e, no fim, prevalecerá.",
+ "Contudo, se um homem ora com fé, ele orará com os olhos postos nas promessas; considerará a oração como um meio para o tempo vindouro, a fim de obter esta ou aquela misericórdia das mãos de Deus.",
+ "Se o teu coração é renovadamente dilatado, a ponto de lamentar pecados cometidos há muito tempo, da mesma maneira, dar graças por misericórdias conquistadas com longas orações, e fazê-lo por um longo período, é um sinal de que foram obtidas pela oração.",
+ "Nas Escrituras, encontramos passagens e promessas que podem, indubitavelmente, sustentar qualquer alma que tenha assim caído — após a paz recebida — no mesmo pecado, e preservá-la de considerar-se excluída da misericórdia e do estado de graça.",
+ "Contudo, lembre-se de que a nova disposição do coração e a força obtida por esse arrependimento renovado, bem como o aumento do ódio contra o pecado ali operado, são apenas criaturas — assim como a graça, e cada novo grau dela, o é.",
+ ],
 
-  "nt-interlinear-grego-pt": [
-    "O Grego Koiné do Novo Testamento é a língua escolhida por Deus para revelar o mistério do Evangelho a todas as nações.",
-    "Cada particípio, cada tempo verbal grego carrega uma precisão teológica que ilumina a doutrina apostólica.",
-    "Na análise morfológica do texto grego, o estudante descobre nuances de graça, fé e salvação invisíveis nas traduções.",
-    "O Novo Testamento interlinear é o microscópio do teólogo: amplia cada célula da revelação neotestamentária."
-  ],
+ "paciencia-obra-perfeita": [
+ "Não desanimeis sob a disciplina, pois o Senhor, em sua infinita graça, está moldando o vosso coração para a eternidade.",
+ "Sim, que Deus tenha a Sua vontade, para a Sua própria glória — \"se for da vontade de Deus\", diz o apóstolo — em nossos sofrimentos, aquieta abundantemente o coração em tudo.",
+ "Mas, meus irmãos, a fé traz ao coração uma mensagem de uma soberania mais elevada, a saber, do amor de Deus dispensado a vós, e diz a todos vós que professais sinceramente ter uma parte em Deus, que Deus já demonstrou o Seu domínio absoluto para convosco ao salvar as vossas almas.",
+ "E assim foi que, por essas impressões mais leves e operações mais superficiais, meu coração tornou-se tão presunçoso que pensei ter não apenas graça, mas mais graça do que meus parentes\".",
+ "Ora, não há a menor centelha da glória de Deus no coração do homem não regenerado e, portanto, não pode ser extraída dele, não, nem a menor centelha.",
+ "É a paciência na alma que conduz o coração à submissão a essa vontade, conforme o \"Emudeci, não abri a boca, pois tu o fizeste\".",
+ ],
 
-  // ─── CLÁSSICOS PURITANOS ──────────────────────────────────────────────
+ "glorioso-banquete-evangelho": [
+ "Ora, porque há tanto gasto para a manutenção da vida cristã, devemos também trazer muita graça, fé, amor e santidade, ou jamais seremos capazes de sustentar essa condição.",
+ "Um homem não pode esperar pela glória da alma e do corpo sem que o Espírito, que levanta a fé para crer e a esperança para esperar, purifique, ajuste e prepare o homem para essa condição gloriosa.",
+ "E que o Senhor te dê um coração que espera, para firmar a tua alma no nome do Senhor, para crer na sua Palavra e nas suas promessas fiéis, a fim de que, no devido tempo, possas regozijar-te no Deus da tua salvação.",
+ "E se o Senhor removeu esta cobertura do teu coração, não duvidamos de que a verdade desta doutrina celestial brilhará confortavelmente em tua alma.",
+ "O homem não pode prestar nenhum serviço aceitável a Deus senão pela graça; e a graça deve alimentar a alma com conhecimento frutífero no poder da fé.",
+ "Se não há nada na alma, nada pode ser extraído; e, portanto, devemos aprender a reter as verdades necessárias, para que, na ocasião oportuna, elas possam vir da memória para o coração.",
+ ],
 
-  "arte-contentamento-divino": [
-    "O contentamento é a arca em que a alma se refugia quando as águas da tribulação cobrem toda a terra.",
-    "Um cristão contente carrega o céu em sua alma antes mesmo de chegar à pátria celestial.",
-    "A murmuração transforma o mel da providência em fel; o contentamento transforma o fel em mel.",
-    "Quem aprendeu a arte do contentamento encontrou a pedra filosofal que transforma cada metal em ouro.",
-    "O contentamento não é insensibilidade, mas a submissão inteligente e alegre à vontade soberana de Deus."
-  ],
+ "conflito-alma": [
+ "Mas, na religião, é muito diferente; aqui, a esperança é a principal graça de sustentação da alma, brotando da fé nas promessas de Deus.",
+ "Caso contrário, coisas mais vis estarão mais próximas de tua alma do que a fé, e manterão a posse contra ela, de modo que não se permitirá que a fé estabeleça um trono no coração.",
+ "Não são os dons comuns e as habilidades gloriosas que nos conferem o caráter de sermos de Deus, mas a graça de usar esses dons, em humildade e amor, para a glória do Doador.",
+ "O Espírito faz entrar na alma tanta vida e percepção do amor de Deus por nós, que atrai a alma a Cristo, de quem ela extrai virtude suficiente para mudar a disposição do seu coração e vivificá-la para o dever.",
+ "Um bom cristão começa seu arrependimento onde seu pecado começa: em seus pensamentos, que são a imediata emanação do seu coração.",
+ "Nesta ordem de Davi sobre sua própria alma, podemos ver diversos caminhos e privilégios de um coração gracioso em meio à tribulação.",
+ ],
 
-  "chave-secreta-ceu": [
-    "A oração secreta é a chave de ouro que abre os cofres de misericórdia inesgotáveis do Pai celeste.",
-    "No quarto secreto de oração, a alma se despe de toda máscara e se apresenta nua diante do Deus que tudo vê.",
-    "Aquele que negligencia a oração secreta trai sua alma e rouba de Deus a honra que Lhe é devida.",
-    "A força de um cristão se mede não pelo brilho de sua vida pública, mas pelo fervor de sua devoção secreta.",
-    "O diabo treme quando vê o mais fraco dos santos de joelhos no quarto secreto de oração."
-  ],
+ "terrivel-voz-deus-cidade": [
+ "Arrependei-vos de coração, a partir de um princípio interior de ódio ao pecado e amor a Deus, e não por considerações exteriores ou meramente pela reflexão sobre as terríveis consequências do pecado.",
+ "Ajuda-nos, ó Deus da nossa salvação, pela glória do teu nome; livra-nos e perdoa os nossos pecados, por amor do teu nome\".",
+ "Estou aflito no meu íntimo; o meu coração se agita dentro de mim; não posso calar-me, porque tu ouviste, ó minha alma, o som da trombeta, o alarido de guerra.",
+ "Oh, os desejos ardentes e a abertura do coração para Ele, quando as riquezas do Evangelho são exibidas e as promessas da Aliança da graça são expostas e aplicadas!",
+ "Se o vosso arrependimento, a vossa fé, o vosso amor e virtudes semelhantes forem fingidos, quão ineficazes serão para vos obter perdão, paz e salvação!",
+ "Não ponhais nelas o vosso coração; fazei uso do que Deus vos concedeu sem a mesquinhez e a negação de si mesmo que o Senhor Jesus jamais ordenou em seus preceitos.",
+ ],
 
-  "glorioso-banquete-evangelho": [
-    "O Evangelho é um banquete onde o mais faminto pecador encontra provisões infinitas de graça e misericórdia.",
-    "Cristo não espera que o pecador se limpe para recebê-lo; Ele vem ao encontro dos imundos com a bacia e a toalha.",
-    "Na mesa do Evangelho, não há lugares vazios; há espaço para todo aquele que reconhece sua fome espiritual.",
-    "A morte foi tragada na vitória; o crente se assenta à mesa sabendo que o último inimigo já foi derrotado.",
-    "Há em Cristo mais misericórdia para abraçar e curar do que pecado em toda a humanidade para condenar."
-  ],
+ "amor-cristo-invisivel": [
+ "Não há movimentos do coração tão doces quanto aqueles das fortes e fervorosas manifestações da alma em seu amor a Cristo, especialmente quando Ele se aproxima e revela o seu amor ao crente.",
+ "O amor de Cristo transmite ao coração do crente uma alegria que é \"inefável e cheia de glória\".",
+ "Foi o grande pecado de Judá \"que ela não se voltou para o Senhor de todo o seu coração, mas fingidamente\".",
+ "Cristo reprova o mundo quanto ao pecado, e isso o mundo não pode suportar: seus santos preceitos ofendem o coração carnal.",
+ "Que o amor seja o esporão e o aguilhão a impelir-vos, para que não apenas caminheis, mas corrais nos caminhos dos mandamentos de Cristo com o coração dilatado.",
+ "Ouvi, e a vossa alma viverá\", diz o profeta em; e eu acrescento: ouvi para que os vossos corações possam amar; para que, onde o olho não pode alcançar, o ouvido possa afetar o coração com amor ao Senhor Jesus.",
+ ],
 
-  "filho-luz-caminhando-trevas": [
-    "Nas horas em que a luz do rosto de Deus parece oculta, apoie-se firme no braço invencível do Seu poder.",
-    "O filho da luz caminhando em trevas não perdeu sua filiação; apenas caminha por um vale que Deus designou para fortalecê-lo.",
-    "As trevas espirituais não são evidência de abandono divino, mas escola de confiança em Deus sem os sentidos.",
-    "Cristo caminhou na escuridão do Getsêmani para que Seus filhos jamais caminhem sem esperança nas trevas.",
-    "A noite mais escura da alma é também a hora em que as estrelas das promessas brilham com maior intensidade."
-  ],
+ "refrigerio-abatido": [
+ "Ora, você pode repousar na promessa de graça e santidade para a sua santificação, e é seu dever fazê-lo; caso contrário, não seria pecado deixar de repousar na promessa.",
+ "Pois eles raciocinam assim: \"Pela graça e misericórdia do Senhor, tenho sido preservado de pecados grandes e graves; contudo, se o Senhor realmente me amasse, Ele atrairia meu coração para perto de Si.",
+ "Oro pelo perdão do pecado, pelo sentido do amor de Deus, pelo crescimento na graça, por consolo para a minha pobre alma abatida\".",
+ "Não dissestes em vossa última tribulação e condição de abatimento: \"Se o Senhor aparecer a mim novamente, nunca mais duvidarei de sua misericórdia\"; e ele não apareceu a vós e abriu a promessa ao vosso coração?",
+ "Se o teu coração for íntegro no que tange à tua certeza, Deus certamente a concederá; pois sabeis o que diz o salmista: \"O Senhor dará graça e glória; não negará bem algum aos que vivem com integridade\".",
+ "Mas, de acordo com essa doutrina, um homem piedoso não pode ter certeza de sua perseverança na graça; pois não posso ter certeza de nenhuma misericórdia sem a promessa de Deus.",
+ ],
 
-  "anatomia-pecados-secretos": [
-    "Os pecados secretos são como raízes subterrâneas que alimentam toda árvore de corrupção visível.",
-    "Quem não persegue os pecados ocultos com o bisturi da Palavra está permitindo que o câncer devore a alma.",
-    "A verdadeira santidade não se contenta com a aparência exterior; ela invade os recônditos mais secretos do coração.",
-    "Diante dos olhos oniscientes de Deus, não existem pecados secretos — apenas pecados que escondemos de nós mesmos."
-  ],
-
-  "terrivel-voz-deus-cidade": [
-    "Quando a peste e o fogo devoraram Londres, a voz de Deus falou mais alto que todas as trombetas humanas.",
-    "As calamidades são os megafones da providência, convocando pecadores obstinados ao arrependimento urgente.",
-    "Em meio às chamas de 1666, o que ficou de pé não foram os edifícios, mas a fé daqueles que confiaram no Senhor.",
-    "Quem tem ouvidos para ouvir a terrível voz de Deus nas calamidades receberá sabedoria para escapar do juízo vindouro."
-  ],
-
-  "vaidade-mundo": [
-    "O mundo promete rios de prazer e entrega apenas gotas de decepção misturadas com amargura.",
-    "Vaidade das vaidades! O homem que abraça o mundo abraça uma sombra que se dissipa ao toque.",
-    "As honras terrenas são coroas de flores que murcham antes que o sol se ponha.",
-    "Somente aquele que desapega o coração do mundo transitório pode agarrar-se ao Reino eterno e imperecível."
-  ],
-
-  "exposicoes-efesios": [
-    "A salvação pela graça soberana é o monumento eterno edificado pelo amor incondicional da Santíssima Trindade.",
-    "Em Efésios, Paulo descortina as insondáveis riquezas de Cristo — um oceano sem fundo de misericórdia redentora.",
-    "A união mística entre Cristo e Sua Igreja é o maior mistério revelado ao entendimento humano pela pena apostólica.",
-    "Fomos predestinados antes da fundação do mundo: esta verdade é o alicerce granítico sobre o qual repousa toda a segurança do crente.",
-    "A graça não é recompensa pelo mérito humano; é o presente imerecido de um Deus que ama os que são indignos de amor."
-  ],
-
-  "retorno-oracoes": [
-    "Quem envia orações como navios ao porto celestial deve vigiar na praia para receber suas cargas preciosas.",
-    "Deus não apenas ouve as orações; Ele as armazena em frascos de ouro e as responde no tempo perfeito de Sua sabedoria.",
-    "A oração que não espera resposta é como a seta disparada sem alvo: gasta energia sem propósito.",
-    "O retorno das orações é sempre maior do que o investimento da fé; Deus paga juros compostos de graça."
-  ],
-
-  "limites-liberdade-crista": [
-    "Cristo nos liberta do jugo do pecado não para vivermos em rebeldia, mas no deleite da santa obediência.",
-    "A liberdade cristã não é licença para pecar, mas poder para servir a Deus com alegria e reverência.",
-    "O antinomiano abusa da graça; o legalista a despreza. O verdadeiro cristão a recebe com tremor e gratidão.",
-    "A Lei é o espelho que mostra a sujeira; a Graça é a fonte que lava. Ambas são presentes do mesmo Deus."
-  ],
-
-  "suspiro-por-deus": [
-    "O desejo mais nobre da alma nascida de novo é contemplar a beleza santificante do rosto do Senhor.",
-    "Um suspiro pela presença de Deus vale mais que mil gritos por todas as riquezas do universo.",
-    "A alma que suspira por Deus já foi tocada pelo Espírito; pois ninguém deseja o céu sem que o céu o tenha desejado primeiro.",
-    "A formosura do Senhor é tal que um vislumbre dela eclipsa todo o esplendor que este mundo pode oferecer."
-  ],
-
-  "paciencia-obra-perfeita": [
-    "A paciência é a virtude que permite à fé coroar o crente mesmo em meio às dores mais agudas.",
-    "Deus não desperdiça nenhum sofrimento; cada gota de dor é ingrediente na receita divina da santificação.",
-    "A paciência cristã não é resignação passiva, mas confiança ativa nas promessas inabaláveis de Deus.",
-    "A obra perfeita da paciência é a alma que emerge do forno da aflição mais pura, mais forte e mais semelhante a Cristo."
-  ],
-
-  "refrigerio-abatido": [
-    "Nunca desespere da graça; quando você se sente no fundo do poço, as mãos de Cristo estão por baixo de você.",
-    "O abatimento de espírito é uma tentação que Satanás usa para paralisar os soldados de Cristo na batalha.",
-    "Deus não se impressiona com a nossa força, mas com a nossa fraqueza que se refugia em Sua onipotência.",
-    "O refrigério do abatido não vem de dentro de si, mas do alto — do trono de graça onde Cristo intercede sem cessar."
-  ],
-
-  "chamado-nao-convertidos": [
-    "Voltem enquanto há fôlego! Venham a Cristo enquanto a porta da graça permanece escancarada!",
-    "Cada dia sem conversão é um dia roubado da eternidade e acrescentado à conta do juízo.",
-    "Não há argumento racional para recusar a salvação: é como rejeitar o antídoto quando o veneno já corre nas veias.",
-    "O chamado de Deus não é sugestão diplomática; é ordem real do Soberano do universo que exige resposta imediata."
-  ],
-
-  "sobre-paciencia-agostinho": [
-    "A paciência verdadeira é o dom celeste que nasce do amor de Deus derramado no coração pelo Espírito Santo.",
-    "Os mártires suportaram as chamas não por força própria, mas pela graça que transformou o tormento em triunfo.",
-    "A paciência do cristão difere da paciência do filósofo como o sol difere de uma vela: uma é dom divino, a outra é esforço humano.",
-    "Não é paciente quem apenas tolera o sofrimento, mas quem o recebe como instrumento de purificação nas mãos do Pai."
-  ],
-
-  "amor-cristo-invisivel": [
-    "Não O vimos com os olhos carnais, contudo nosso coração inflama-se de santa afeição por Sua pessoa gloriosa.",
-    "O amor pelo Cristo invisível é a prova mais irrefutável de que a fé é dom sobrenatural do Espírito.",
-    "Amar a quem nunca se viu é o milagre quotidiano de todo cristão genuíno; é a fé operando pelo amor.",
-    "Quando O virmos face a face, descobriremos que nosso amor era apenas uma centelha diante do incêndio da Sua glória."
-  ],
-
-  "carta-privilegios-crente": [
-    "Tudo é vosso: vida, morte, mundo presente, mundo futuro — a herança do crente é ilimitada em Cristo.",
-    "O crente é mais rico que reis; possui em Cristo tesouros que os cofres do universo não podem conter.",
-    "A carta de privilégios do cristão foi redigida com o sangue do Cordeiro e selada pelo Espírito eterno.",
-    "Quem pertence a Cristo possui todas as coisas; quem não pertence a Cristo, por mais que possua, nada tem."
-  ],
-
-  "entranhas-abertas": [
-    "As entranhas de Cristo estão abertas de compaixão; Ele corre ao encontro do pecador quebrantado com abraço de redenção.",
-    "No Cântico dos Cânticos, Cristo admira Sua noiva não pelo que ela é em si, mas pelo que Ele fez dela pela graça.",
-    "A ternura do Noivo celestial é tal que nenhuma ferida da noiva passa despercebida ao Seu olhar amoroso.",
-    "A união entre Cristo e a Igreja é mais íntima que a do esposo e esposa; é a fusão espiritual do céu com a terra redimida."
-  ],
-
-  "cristao-silencioso": [
-    "O silêncio diante da vara da aflição não é fraqueza; é a mais eloquente confissão da soberania divina.",
-    "Emudeci e não abri a boca, porque Tu o fizeste — esta é a oração mais profunda que um coração aflito pode oferecer.",
-    "O cristão silencioso sob o sofrimento demonstra mais fé do que mil palavras de sabedoria humana.",
-    "A vara que Deus usa para disciplinar Seus filhos é embebida em amor; quem a aceita em silêncio prova que é herdeiro legítimo."
-  ],
-
-  "quinhao-tortuoso": [
-    "As curvaturas que Deus traça em nossa jornada destinam-se a dobrar nosso orgulho para conformá-lo à Sua santidade.",
-    "Ninguém recebe um quinhão perfeitamente reto nesta vida; as tortuosidades são o mapa pelo qual Deus nos guia ao céu.",
-    "O crente que abraça seu quinhão tortuoso com fé descobre que cada curva o aproximava de Deus.",
-    "Deus endireita a alma pelas mesmas curvas que parecem desviar-nos do caminho; Sua sabedoria supera infinitamente a nossa."
-  ],
-
-  "conflito-alma": [
-    "A alma que luta consigo mesma já foi libertada por Cristo; pois o homem natural não conhece conflito espiritual.",
-    "O desespero é um mentiroso que sussurra que Deus esqueceu; a fé é a verdade que grita que Ele nunca abandona.",
-    "Por que estás abatida, ó minha alma? Espera em Deus, pois ainda O louvarás pela salvação do Seu rosto.",
-    "O conflito interior do crente é evidência de vida espiritual; só os mortos não sentem dor."
-  ],
-
-  "misterio-providencia": [
-    "As providências de Deus são como caracteres hebraicos: compreendem-se melhor quando lidas de trás para frente.",
-    "Não há acasos no universo governado por Deus; cada evento é um ponto bordado no tapete eterno de Sua vontade.",
-    "O mistério da providência é que Deus escreve linhas retas com os bastões tortos que os homens Lhe entregam.",
-    "Quem mantém um diário das providências divinas descobrirá, ao final, que cada capítulo era necessário para a conclusão gloriosa.",
-    "A providência de Deus é o governo invisível pelo qual o Criador conduz todas as coisas ao Seu fim glorioso."
-  ],
-
-  // ─── INTERNACIONAL ────────────────────────────────────────────────────
-
-  "nt-trilingue": [
-    "Três línguas em um só texto revelam que o Evangelho foi desde o princípio destinado a todas as nações.",
-    "O Grego Koiné, o Português e o Inglês convergem para iluminar verdades que nenhuma língua isolada esgota.",
-    "A edição trilíngue é como um prisma: decompõe a luz branca da revelação em espectro completo de significados.",
-    "Comparar o texto em três idiomas é ouvir o Espírito Santo falar através de três janelas culturais distintas."
-  ],
-
-  "nt-interlinear-grego-es": [
-    "El texto griego del Nuevo Testamento es el pulso vivo de la revelación apostólica que late en cada versículo.",
-    "La traducción interlineal permite al estudiante hispano tocar con sus propios ojos cada palabra que el apóstol escribió.",
-    "No hay atajos para la verdad bíblica; el camino más seguro es regresar siempre al texto original griego.",
-    "Cada palabra griega traducida al español es un puente entre el mundo de los apóstoles y el nuestro."
-  ],
-
-  "nt-interlinear-grego-fr": [
-    "Le texte grec du Nouveau Testament est la source pure d'où jaillissent toutes les vérités de la foi chrétienne.",
-    "L'interlinéaire grec-français ouvre au lecteur francophone la porte du jardin apostolique dans sa beauté originale.",
-    "Chaque mot grec, translitéré et traduit, est une graine de lumière plantée dans l'esprit du chercheur de vérité.",
-    "La tradition Louis Segond rencontre le texte Koinè: c'est le dialogue entre la Parole éternelle et la langue de Molière."
-  ]
 };
 
-
-// ==========================================================================
-// CAROUSEL DE CITAÇÕES — 55 ENTRADAS PARA O HOME
-// ==========================================================================
 const CAROUSEL_QUOTES = [
-  // --- Thomas Watson ---
-  { quote: "O contentamento é a arca em que a alma se refugia quando as águas da tribulação cobrem toda a terra.", author: "Thomas Watson", book: "A Arte do Contentamento Divino", bookId: "arte-contentamento-divino" },
-  { quote: "Um cristão contente carrega o céu em sua alma antes mesmo de chegar à pátria celestial.", author: "Thomas Watson", book: "A Arte do Contentamento Divino", bookId: "arte-contentamento-divino" },
-  { quote: "A murmuração transforma o mel da providência em fel; o contentamento transforma o fel em mel.", author: "Thomas Watson", book: "A Arte do Contentamento Divino", bookId: "arte-contentamento-divino" },
-  { quote: "Tudo é vosso: vida, morte, mundo presente, mundo futuro — a herança do crente é ilimitada em Cristo.", author: "Thomas Watson", book: "A Carta de Privilégios do Crente", bookId: "carta-privilegios-crente" },
-  { quote: "O crente é mais rico que reis; possui em Cristo tesouros que os cofres do universo não podem conter.", author: "Thomas Watson", book: "A Carta de Privilégios do Crente", bookId: "carta-privilegios-crente" },
-  { quote: "A carta de privilégios do cristão foi redigida com o sangue do Cordeiro e selada pelo Espírito eterno.", author: "Thomas Watson", book: "A Carta de Privilégios do Crente", bookId: "carta-privilegios-crente" },
-
-  // --- Richard Sibbes ---
-  { quote: "Há em Cristo mais misericórdia para abraçar e curar do que pecado em toda a humanidade para condenar.", author: "Richard Sibbes", book: "O Glorioso Banquete do Evangelho", bookId: "glorioso-banquete-evangelho" },
-  { quote: "Na mesa do Evangelho, não há lugares vazios; há espaço para todo aquele que reconhece sua fome espiritual.", author: "Richard Sibbes", book: "O Glorioso Banquete do Evangelho", bookId: "glorioso-banquete-evangelho" },
-  { quote: "O desejo mais nobre da alma nascida de novo é contemplar a beleza santificante do rosto do Senhor.", author: "Richard Sibbes", book: "Um Suspiro por Deus", bookId: "suspiro-por-deus" },
-  { quote: "A alma que suspira por Deus já foi tocada pelo Espírito; pois ninguém deseja o céu sem que o céu o tenha desejado primeiro.", author: "Richard Sibbes", book: "Um Suspiro por Deus", bookId: "suspiro-por-deus" },
-  { quote: "As entranhas de Cristo estão abertas de compaixão; Ele corre ao encontro do pecador quebrantado com abraço de redenção.", author: "Richard Sibbes", book: "Entranhas Abertas", bookId: "entranhas-abertas" },
-  { quote: "A alma que luta consigo mesma já foi libertada por Cristo; pois o homem natural não conhece conflito espiritual.", author: "Richard Sibbes", book: "O Conflito da Alma", bookId: "conflito-alma" },
-  { quote: "O desespero é um mentiroso que sussurra que Deus esqueceu; a fé é a verdade que grita que Ele nunca abandona.", author: "Richard Sibbes", book: "O Conflito da Alma", bookId: "conflito-alma" },
-  { quote: "A formosura do Senhor é tal que um vislumbre dela eclipsa todo o esplendor que este mundo pode oferecer.", author: "Richard Sibbes", book: "Um Suspiro por Deus", bookId: "suspiro-por-deus" },
-
-  // --- Thomas Goodwin ---
-  { quote: "Nas horas em que a luz do rosto de Deus parece oculta, apoie-se firme no braço invencível do Seu poder.", author: "Thomas Goodwin", book: "O Filho da Luz Caminhando em Trevas", bookId: "filho-luz-caminhando-trevas" },
-  { quote: "Cristo caminhou na escuridão do Getsêmani para que Seus filhos jamais caminhem sem esperança nas trevas.", author: "Thomas Goodwin", book: "O Filho da Luz Caminhando em Trevas", bookId: "filho-luz-caminhando-trevas" },
-  { quote: "A noite mais escura da alma é também a hora em que as estrelas das promessas brilham com maior intensidade.", author: "Thomas Goodwin", book: "O Filho da Luz Caminhando em Trevas", bookId: "filho-luz-caminhando-trevas" },
-  { quote: "A salvação pela graça soberana é o monumento eterno edificado pelo amor incondicional da Santíssima Trindade.", author: "Thomas Goodwin", book: "Exposições em Efésios", bookId: "exposicoes-efesios" },
-  { quote: "Fomos predestinados antes da fundação do mundo: o alicerce granítico sobre o qual repousa toda segurança do crente.", author: "Thomas Goodwin", book: "Exposições em Efésios", bookId: "exposicoes-efesios" },
-  { quote: "Quem envia orações como navios ao porto celestial deve vigiar na praia para receber suas cargas preciosas.", author: "Thomas Goodwin", book: "O Retorno das Orações", bookId: "retorno-oracoes" },
-  { quote: "O retorno das orações é sempre maior do que o investimento da fé; Deus paga juros compostos de graça.", author: "Thomas Goodwin", book: "O Retorno das Orações", bookId: "retorno-oracoes" },
-  { quote: "A paciência é a virtude que permite à fé coroar o crente mesmo em meio às dores mais agudas.", author: "Thomas Goodwin", book: "A Paciência e Sua Obra Perfeita", bookId: "paciencia-obra-perfeita" },
-  { quote: "A obra perfeita da paciência é a alma que emerge do forno da aflição mais pura e mais semelhante a Cristo.", author: "Thomas Goodwin", book: "A Paciência e Sua Obra Perfeita", bookId: "paciencia-obra-perfeita" },
-
-  // --- Thomas Brooks ---
-  { quote: "A oração secreta é a chave de ouro que abre os cofres de misericórdia inesgotáveis do Pai celeste.", author: "Thomas Brooks", book: "A Chave Secreta do Céu", bookId: "chave-secreta-ceu" },
-  { quote: "A força de um cristão se mede não pelo brilho de sua vida pública, mas pelo fervor de sua devoção secreta.", author: "Thomas Brooks", book: "A Chave Secreta do Céu", bookId: "chave-secreta-ceu" },
-  { quote: "O diabo treme quando vê o mais fraco dos santos de joelhos no quarto secreto de oração.", author: "Thomas Brooks", book: "A Chave Secreta do Céu", bookId: "chave-secreta-ceu" },
-  { quote: "O silêncio diante da vara da aflição não é fraqueza; é a mais eloquente confissão da soberania divina.", author: "Thomas Brooks", book: "O Cristão Silencioso sob a Vara", bookId: "cristao-silencioso" },
-  { quote: "A vara que Deus usa para disciplinar Seus filhos é embebida em amor; quem a aceita em silêncio prova que é herdeiro legítimo.", author: "Thomas Brooks", book: "O Cristão Silencioso sob a Vara", bookId: "cristao-silencioso" },
-
-  // --- John Flavel ---
-  { quote: "As providências de Deus são como caracteres hebraicos: compreendem-se melhor quando lidas de trás para frente.", author: "John Flavel", book: "O Mistério da Providência", bookId: "misterio-providencia" },
-  { quote: "Não há acasos no universo governado por Deus; cada evento é um ponto bordado no tapete eterno de Sua vontade.", author: "John Flavel", book: "O Mistério da Providência", bookId: "misterio-providencia" },
-  { quote: "O mistério da providência é que Deus escreve linhas retas com os bastões tortos que os homens Lhe entregam.", author: "John Flavel", book: "O Mistério da Providência", bookId: "misterio-providencia" },
-  { quote: "Quem mantém um diário das providências divinas descobrirá, ao final, que cada capítulo era necessário para a conclusão gloriosa.", author: "John Flavel", book: "O Mistério da Providência", bookId: "misterio-providencia" },
-
-  // --- Thomas Boston ---
-  { quote: "As curvaturas que Deus traça em nossa jornada destinam-se a dobrar nosso orgulho para conformá-lo à Sua santidade.", author: "Thomas Boston", book: "O Quinhão Tortuoso", bookId: "quinhao-tortuoso" },
-  { quote: "O crente que abraça seu quinhão tortuoso com fé descobre que cada curva o aproximava de Deus.", author: "Thomas Boston", book: "O Quinhão Tortuoso", bookId: "quinhao-tortuoso" },
-  { quote: "Deus endireita a alma pelas mesmas curvas que parecem desviar-nos do caminho; Sua sabedoria supera infinitamente a nossa.", author: "Thomas Boston", book: "O Quinhão Tortuoso", bookId: "quinhao-tortuoso" },
-
-  // --- Richard Baxter ---
-  { quote: "Voltem enquanto há fôlego! Venham a Cristo enquanto a porta da graça permanece escancarada!", author: "Richard Baxter", book: "Um Chamado aos Não Convertidos", bookId: "chamado-nao-convertidos" },
-  { quote: "Cada dia sem conversão é um dia roubado da eternidade e acrescentado à conta do juízo.", author: "Richard Baxter", book: "Um Chamado aos Não Convertidos", bookId: "chamado-nao-convertidos" },
-  { quote: "O chamado de Deus não é sugestão diplomática; é ordem real do Soberano que exige resposta imediata.", author: "Richard Baxter", book: "Um Chamado aos Não Convertidos", bookId: "chamado-nao-convertidos" },
-
-  // --- William Bridge ---
-  { quote: "Nunca desespere da graça; quando você se sente no fundo do poço, as mãos de Cristo estão por baixo de você.", author: "William Bridge", book: "Um Refrigério para o Abatido", bookId: "refrigerio-abatido" },
-  { quote: "O refrigério do abatido não vem de dentro de si, mas do alto — do trono de graça onde Cristo intercede sem cessar.", author: "William Bridge", book: "Um Refrigério para o Abatido", bookId: "refrigerio-abatido" },
-  { quote: "Deus não se impressiona com a nossa força, mas com a nossa fraqueza que se refugia em Sua onipotência.", author: "William Bridge", book: "Um Refrigério para o Abatido", bookId: "refrigerio-abatido" },
-
-  // --- Obadiah Sedgwick ---
-  { quote: "Os pecados secretos são como raízes subterrâneas que alimentam toda árvore de corrupção visível.", author: "Obadiah Sedgwick", book: "A Anatomia dos Pecados Secretos", bookId: "anatomia-pecados-secretos" },
-  { quote: "Diante dos olhos oniscientes de Deus, não existem pecados secretos — apenas pecados que escondemos de nós mesmos.", author: "Obadiah Sedgwick", book: "A Anatomia dos Pecados Secretos", bookId: "anatomia-pecados-secretos" },
-
-  // --- Thomas Vincent ---
-  { quote: "Não O vimos com os olhos carnais, contudo nosso coração inflama-se de santa afeição por Sua pessoa gloriosa.", author: "Thomas Vincent", book: "O Amor pelo Cristo Invisível", bookId: "amor-cristo-invisivel" },
-  { quote: "Quando O virmos face a face, descobriremos que nosso amor era apenas uma centelha diante do incêndio da Sua glória.", author: "Thomas Vincent", book: "O Amor pelo Cristo Invisível", bookId: "amor-cristo-invisivel" },
-  { quote: "As calamidades são os megafones da providência, convocando pecadores obstinados ao arrependimento urgente.", author: "Thomas Vincent", book: "A Terrível Voz de Deus na Cidade", bookId: "terrivel-voz-deus-cidade" },
-
-  // --- Samuel Bolton ---
-  { quote: "A liberdade cristã não é licença para pecar, mas poder para servir a Deus com alegria e reverência.", author: "Samuel Bolton", book: "Os Limites da Liberdade Cristã", bookId: "limites-liberdade-crista" },
-  { quote: "A Lei é o espelho que mostra a sujeira; a Graça é a fonte que lava. Ambas são presentes do mesmo Deus.", author: "Samuel Bolton", book: "Os Limites da Liberdade Cristã", bookId: "limites-liberdade-crista" },
-
-  // --- Ezekiel Hopkins ---
-  { quote: "O mundo promete rios de prazer e entrega apenas gotas de decepção misturadas com amargura.", author: "Ezekiel Hopkins", book: "A Vaidade do Mundo", bookId: "vaidade-mundo" },
-  { quote: "As honras terrenas são coroas de flores que murcham antes que o sol se ponha.", author: "Ezekiel Hopkins", book: "A Vaidade do Mundo", bookId: "vaidade-mundo" },
-
-  // --- Santo Agostinho ---
-  { quote: "A paciência verdadeira é o dom celeste que nasce do amor de Deus derramado no coração pelo Espírito Santo.", author: "Santo Agostinho", book: "Sobre a Paciência", bookId: "sobre-paciencia-agostinho" },
-  { quote: "Os mártires suportaram as chamas não por força própria, mas pela graça que transformou o tormento em triunfo.", author: "Santo Agostinho", book: "Sobre a Paciência", bookId: "sobre-paciencia-agostinho" },
-  { quote: "A paciência do cristão difere da paciência do filósofo como o sol difere de uma vela: uma é dom divino, a outra é esforço humano.", author: "Santo Agostinho", book: "Sobre a Paciência", bookId: "sobre-paciencia-agostinho" },
-
-  // --- Bíblias Interlineares ---
-  { quote: "Cada palavra hebraica do Pentateuco é uma janela aberta para o coração do pacto eterno de Deus com Seu povo.", author: "Editora Pactum", book: "Pentateuco Interlinear", bookId: "pentateuco-interlinear" },
-  { quote: "O Grego Koiné do Novo Testamento é a língua escolhida por Deus para revelar o mistério do Evangelho a todas as nações.", author: "Editora Pactum", book: "NT Interlinear Grego-Português", bookId: "nt-interlinear-grego-pt" },
-  { quote: "A edição trilíngue é como um prisma: decompõe a luz branca da revelação em espectro completo de significados.", author: "Editora Pactum", book: "NT Trilíngue (Grego-PT-EN)", bookId: "nt-trilingue" }
+ { quote: "Sim, que Deus tenha a Sua vontade, para a Sua própria glória — \"se for da vontade de Deus\", diz o apóstolo — em nossos sofrimentos, aquieta abundantemente o coração em tudo.", author: "Thomas Goodwin", book: "A Paciência e Sua Obra Perfeita", bookId: "paciencia-obra-perfeita" },
+ { quote: "Um homem não pode esperar pela glória da alma e do corpo sem que o Espírito, que levanta a fé para crer e a esperança para esperar, purifique, ajuste e prepare o homem para essa condição gloriosa.", author: "Richard Sibbes", book: "O Glorioso Banquete do Evangelho", bookId: "glorioso-banquete-evangelho" },
+ { quote: "A adversidade no quinhão dá origem a muitos atos de fé, esperança, amor, abnegação, resignação e outras graças; a muitos suspiros, anseios e gemidos celestiais que, de outra forma, não seriam produzidos.", author: "Thomas Boston", book: "O Quinhão Tortuoso", bookId: "quinhao-tortuoso" },
+ { quote: "Se tu és Seu filho e tais degelos não forem suficientes, Ele usará, ao final, grandes aflições para divorciar teu coração do teu pecado; Seu amor, de uma maneira ou de outra, te vencerá e, no fim, prevalecerá.", author: "Thomas Goodwin", book: "O Retorno das Orações", bookId: "retorno-oracoes" },
+ { quote: "Mas, meus irmãos, a fé traz ao coração uma mensagem de uma soberania mais elevada, a saber, do amor de Deus dispensado a vós, e diz a todos vós que professais sinceramente ter uma parte em Deus, que Deus já demonstrou o Seu domínio absoluto para convosco ao salvar as vossas almas.", author: "Thomas Goodwin", book: "A Paciência e Sua Obra Perfeita", bookId: "paciencia-obra-perfeita" },
+ { quote: "O coração que carece de conhecimento não é bom, diz Salomão, e, portanto, andar em trevas é acompanhado de andar na vaidade da mente", author: "Thomas Goodwin", book: "O Filho da Luz Caminhando em Trevas", bookId: "filho-luz-caminhando-trevas" },
+ { quote: "Não é o ser lançado em circunstâncias de humilhação, pela Providência de Deus, mas o abaixamento dos nossos espíritos sob elas, pela graça de Deus, que nos coloca dentro do alcance desta promessa.", author: "Thomas Boston", book: "O Quinhão Tortuoso", bookId: "quinhao-tortuoso" },
+ { quote: "Não há movimentos do coração tão doces quanto aqueles das fortes e fervorosas manifestações da alma em seu amor a Cristo, especialmente quando Ele se aproxima e revela o seu amor ao crente.", author: "Thomas Vincent", book: "O Amor pelo Cristo Invisível", bookId: "amor-cristo-invisivel" },
+ { quote: "A fé dá paz na tribulação A fé é uma graça que pacifica o coração porque é uma graça que o assegura.", author: "Thomas Watson", book: "A Carta de Privilégios do Crente", bookId: "carta-privilegios-crente" },
+ { quote: "Se, em todas as tuas tribulações, o teu coração for levado a exercitar a fé nas promessas, as tuas tribulações procedem do amor.", author: "Thomas Brooks", book: "O Cristão Silencioso sob a Vara", bookId: "cristao-silencioso" },
+ { quote: "Se não considerásseis isso em vosso coração, seria um sinal de que não tendes graça; de que não fizestes Dele a vossa porção, se pudésseis suportar a Sua ausência sem lamentar.", author: "Thomas Goodwin", book: "O Filho da Luz Caminhando em Trevas", bookId: "filho-luz-caminhando-trevas" },
+ { quote: "Um cristão tem, vindo de dentro, aquilo que é capaz de sustentá-lo; aquela força de fé e boa esperança pela graça, que sustenta o seu coração na deficiência dos confortos exteriores.", author: "Thomas Watson", book: "A Arte do Contentamento Divino", bookId: "arte-contentamento-divino" },
+ { quote: "A humildade é como o chumbo na rede, que mantém a alma baixa quando ela se eleva pela paixão; e o contentamento é como a cortiça, que mantém o coração erguido quando ele está afundando sob o desânimo.", author: "Thomas Watson", book: "A Arte do Contentamento Divino", bookId: "arte-contentamento-divino" },
+ { quote: "Foi o seu amor, ou uma graça no coração de Jesus Cristo, que o levou a tornar-se o autor e o conquistador de toda a salvação para nós.", author: "Thomas Goodwin", book: "Exposições em Efésios", bookId: "exposicoes-efesios" },
+ { quote: "Ajuda-nos, ó Deus da nossa salvação, pela glória do teu nome; livra-nos e perdoa os nossos pecados, por amor do teu nome\".", author: "Thomas Vincent", book: "A Terrível Voz de Deus na Cidade", bookId: "terrivel-voz-deus-cidade" },
+ { quote: "Ora, porque há tanto gasto para a manutenção da vida cristã, devemos também trazer muita graça, fé, amor e santidade, ou jamais seremos capazes de sustentar essa condição.", author: "Richard Sibbes", book: "O Glorioso Banquete do Evangelho", bookId: "glorioso-banquete-evangelho" },
+ { quote: "E que o Senhor te dê um coração que espera, para firmar a tua alma no nome do Senhor, para crer na sua Palavra e nas suas promessas fiéis, a fim de que, no devido tempo, possas regozijar-te no Deus da tua salvação.", author: "Richard Sibbes", book: "O Glorioso Banquete do Evangelho", bookId: "glorioso-banquete-evangelho" },
+ { quote: "Estou aflito no meu íntimo; o meu coração se agita dentro de mim; não posso calar-me, porque tu ouviste, ó minha alma, o som da trombeta, o alarido de guerra.", author: "Thomas Vincent", book: "A Terrível Voz de Deus na Cidade", bookId: "terrivel-voz-deus-cidade" },
+ { quote: "Se tens pecado contra mais luz, mais amor, mais misericórdias, mais experiências e mais promessas do que outros, não é de admirar que as tuas aflições sejam maiores.", author: "Thomas Brooks", book: "O Cristão Silencioso sob a Vara", bookId: "cristao-silencioso" },
+ { quote: "O amor de Cristo transmite ao coração do crente uma alegria que é \"inefável e cheia de glória\".", author: "Thomas Vincent", book: "O Amor pelo Cristo Invisível", bookId: "amor-cristo-invisivel" },
+ { quote: "Nossa salvação não depende apenas da misericórdia, mas do amor; e não apenas do amor de sua natureza, mas de um ato de amor, um amor fixado em nós com sua vontade e coração.", author: "Thomas Goodwin", book: "Exposições em Efésios", bookId: "exposicoes-efesios" },
+ { quote: "A fé humilha a alma; ela tem um duplo aspecto: olha para o pecado, e a visão do pecado humilha; olha para a graça gratuita, e a visão da misericórdia humilha.", author: "Thomas Watson", book: "A Carta de Privilégios do Crente", bookId: "carta-privilegios-crente" },
+ { quote: "Pois eles raciocinam assim: \"Pela graça e misericórdia do Senhor, tenho sido preservado de pecados grandes e graves; contudo, se o Senhor realmente me amasse, Ele atrairia meu coração para perto de Si.", author: "William Bridge", book: "Um Refrigério para o Abatido", bookId: "refrigerio-abatido" },
+ { quote: "O orgulho de seu coração os expõe particularmente às cruzes Um coração orgulhoso criará uma cruz para si mesmo onde uma alma humilde não encontraria nenhuma.", author: "Thomas Boston", book: "O Quinhão Tortuoso", bookId: "quinhao-tortuoso" },
+ { quote: "Tais orações nunca alcançam os ouvidos de Deus, nem deleitam o Seu coração, nem jamais serão guardadas no Seu seio, se não forem direcionadas para a Sua glória.", author: "Thomas Brooks", book: "A Chave Secreta do Céu", bookId: "chave-secreta-ceu" },
+ { quote: "Não são os dons comuns e as habilidades gloriosas que nos conferem o caráter de sermos de Deus, mas a graça de usar esses dons, em humildade e amor, para a glória do Doador.", author: "Richard Sibbes", book: "O Conflito da Alma", bookId: "conflito-alma" },
+ { quote: "De maneira especial, ela é oposta à santidade, e tais pecados são obras da carne manifestas até mesmo à natureza; portanto, quando se cai neles frequentemente, manifesta-se que o coração não passa de carne.", author: "Thomas Goodwin", book: "O Retorno das Orações", bookId: "retorno-oracoes" },
+ { quote: "O contentamento é o arco espiritual, ou pilar da alma; ele capacita o homem a suportar fardos; aquele cujo coração está pronto a desfalecer sob o menor pecado, em virtude disto, possui um espírito invencível sob os sofrimentos.", author: "Thomas Watson", book: "A Arte do Contentamento Divino", bookId: "arte-contentamento-divino" },
+ { quote: "Oro pelo perdão do pecado, pelo sentido do amor de Deus, pelo crescimento na graça, por consolo para a minha pobre alma abatida\".", author: "William Bridge", book: "Um Refrigério para o Abatido", bookId: "refrigerio-abatido" },
+ { quote: "Ao orar com muitos, há diversos elementos que podem subornar e provocar um coração carnal, como o orgulho, a vanglória, o amor aos aplausos ou o desejo de obter renome.", author: "Thomas Brooks", book: "A Chave Secreta do Céu", bookId: "chave-secreta-ceu" },
+ { quote: "A fé é uma graça que vivifica o coração Ela é a artéria vital da alma: \"O justo viverá pela sua fé\".", author: "Thomas Watson", book: "A Carta de Privilégios do Crente", bookId: "carta-privilegios-crente" },
+ { quote: "Não desanimeis sob a disciplina, pois o Senhor, em sua infinita graça, está moldando o vosso coração para a eternidade.", author: "Thomas Goodwin", book: "A Paciência e Sua Obra Perfeita", bookId: "paciencia-obra-perfeita" },
+ { quote: "Mas, na religião, é muito diferente; aqui, a esperança é a principal graça de sustentação da alma, brotando da fé nas promessas de Deus.", author: "Richard Sibbes", book: "O Conflito da Alma", bookId: "conflito-alma" },
+ { quote: "Contudo, se um homem ora com fé, ele orará com os olhos postos nas promessas; considerará a oração como um meio para o tempo vindouro, a fim de obter esta ou aquela misericórdia das mãos de Deus.", author: "Thomas Goodwin", book: "O Retorno das Orações", bookId: "retorno-oracoes" },
+ { quote: "A livre graça nada pode dizer para se magnificar que a fé no coração de um crente, operada pelo Espírito, não possa acolher e dar a Ele a glória de sua própria maneira.", author: "Thomas Goodwin", book: "Exposições em Efésios", bookId: "exposicoes-efesios" },
+ { quote: "Ora, você pode repousar na promessa de graça e santidade para a sua santificação, e é seu dever fazê-lo; caso contrário, não seria pecado deixar de repousar na promessa.", author: "William Bridge", book: "Um Refrigério para o Abatido", bookId: "refrigerio-abatido" },
+ { quote: "Quando as concupiscências predominantes são subjugadas, quando os pecados de estimação jazem mortos na alma, então o Espírito vem e sela o amor, a vida e a glória para a alma.", author: "Thomas Brooks", book: "A Chave Secreta do Céu", bookId: "chave-secreta-ceu" },
+ { quote: "Deus crava muitas lanças afiadas através do coração de muitos pecadores, e ainda assim eles não sentem nada, não se queixam de nada: as almas desses homens sangrarão até a morte.", author: "Thomas Brooks", book: "O Cristão Silencioso sob a Vara", bookId: "cristao-silencioso" },
+ { quote: "Se há dúvidas de que não há graça no coração, então o coração não descansa até que alguma graça em verdade seja evidenciada, e alguma promessa seja feita, ou alguma graça seja aplicada ao íntimo.", author: "Thomas Goodwin", book: "O Filho da Luz Caminhando em Trevas", bookId: "filho-luz-caminhando-trevas" },
+ { quote: "Foi o grande pecado de Judá \"que ela não se voltou para o Senhor de todo o seu coração, mas fingidamente\".", author: "Thomas Vincent", book: "O Amor pelo Cristo Invisível", bookId: "amor-cristo-invisivel" },
+ { quote: "Arrependei-vos de coração, a partir de um princípio interior de ódio ao pecado e amor a Deus, e não por considerações exteriores ou meramente pela reflexão sobre as terríveis consequências do pecado.", author: "Thomas Vincent", book: "A Terrível Voz de Deus na Cidade", bookId: "terrivel-voz-deus-cidade" },
+ { quote: "Caso contrário, coisas mais vis estarão mais próximas de tua alma do que a fé, e manterão a posse contra ela, de modo que não se permitirá que a fé estabeleça um trono no coração.", author: "Richard Sibbes", book: "O Conflito da Alma", bookId: "conflito-alma" },
 ];
