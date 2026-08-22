@@ -1,4 +1,7 @@
-import urllib.request, re, json, time
+import urllib.request
+import re
+import json
+import time
 
 asins = [
     ("pentateuco-interlinear", "B0HD2PC5YY"),
@@ -36,35 +39,58 @@ asins = [
 ]
 
 headers = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
     'Accept-Language': 'pt-BR,pt;q=0.9',
 }
+
+def clean_price(p):
+    if not p:
+        return None
+    p = p.replace('&nbsp;', ' ').replace('\xa0', ' ').strip()
+    m = re.search(r'R\$\s*([\d\.,]+)', p)
+    if m:
+        return f"R$ {m.group(1).strip()}"
+    return p
 
 results = {}
 
 for id_book, asin in asins:
     url = f"https://translate.google.com/translate?sl=pt&tl=en&u=https://www.amazon.com.br/dp/{asin}"
     price_found = None
-    try:
-        req = urllib.request.Request(url, headers=headers)
-        with urllib.request.urlopen(req, timeout=12) as resp:
-            html = resp.read().decode('utf-8', errors='ignore')
+    
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(url, headers=headers)
+            with urllib.request.urlopen(req, timeout=15) as resp:
+                html = resp.read().decode('utf-8', errors='ignore')
+                
+                m = re.search(r'ou\s*<span[^>]*>\s*R\$\s*(&nbsp;|\xa0|\s)*([\d\.,]+)\s*</span>\s*para\s*comprar', html, re.IGNORECASE)
+                if not m:
+                    m = re.search(r'ou\s*R\$\s*(&nbsp;|\xa0|\s)*([\d\.,]+)\s*para\s*comprar', html, re.IGNORECASE)
+                
+                if m:
+                    price_found = f"R$ {m.group(2).strip()}"
+                else:
+                    m2 = re.search(r'id="tmm-grid-swatch-KINDLE".*?R\$\s*(&nbsp;|\xa0|\s)*([\d]+,[\d]{2})', html, re.DOTALL)
+                    if m2 and m2.group(2).strip() != "0,00":
+                        price_found = f"R$ {m2.group(2).strip()}"
+                    else:
+                        for pm in re.finditer(r'R\$\s*(&nbsp;|\xa0|\s)*([\d]+,[\d]{2})', html):
+                            val = pm.group(2).strip()
+                            if val != "0,00":
+                                price_found = f"R$ {val}"
+                                break
+            if price_found:
+                break
+        except Exception:
+            time.sleep(1)
             
-            # Match Kindle price pattern: "Kindle R$ XX,XX" or "ou R$ XX,XX para comprar" or "R$ XX,XX"
-            m = re.search(r'ou\s*R\$\s*([\d\.,]+)\s*para\s*comprar', html, re.IGNORECASE)
-            if m:
-                price_found = f"R$ {m.group(1).strip()}"
-            else:
-                m2 = re.search(r'R\$\s*([\d]+,[\d]{2})', html)
-                if m2:
-                    price_found = f"R$ {m2.group(1).strip()}"
-    except Exception as e:
-        pass
-        
-    print(f"'{id_book}': ('{asin}', '{price_found}'),")
+    price_found = clean_price(price_found)
+    print(f"'{id_book}': '{price_found}',  # {asin}")
     results[id_book] = price_found
-    time.sleep(0.5)
+    time.sleep(0.4)
 
 with open("precos_br.json", "w", encoding="utf-8") as f:
     json.dump(results, f, ensure_ascii=False, indent=2)
-print("Finished scraping Amazon BR prices")
+
+print("Finished updating precos_br.json!")
