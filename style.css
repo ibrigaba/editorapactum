@@ -2319,3 +2319,125 @@ h1, h2, h3, h4, h5, h6 {
     grid-template-columns: 1fr;
   }
 }
+
+/* ==========================================================================
+   SEÇÃO DE CITAÇÕES DO MODAL
+   ========================================================================== */
+
+.modal-citations-section {
+  margin-top: 2.5rem;
+  border-top: 1px solid rgba(201, 168, 76, 0.18);
+  padding-top: 2rem;
+}
+
+.modal-citations-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 1.75rem;
+}
+
+.citations-title {
+  font-family: 'Crimson Text', 'Playfair Display', Georgia, serif;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--gold-300);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.citations-icon {
+  color: var(--gold-500);
+  font-size: 0.65rem;
+  opacity: 0.7;
+}
+
+.modal-citations-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.modal-citation-item {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  background: linear-gradient(135deg,
+    rgba(201, 168, 76, 0.06) 0%,
+    rgba(13, 20, 33, 0.5) 100%);
+  border: 1px solid rgba(201, 168, 76, 0.12);
+  border-left: 3px solid var(--gold-500);
+  border-radius: 0 0.6rem 0.6rem 0;
+  padding: 1rem 1.25rem;
+  animation: citationFadeUp 0.45s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.modal-citation-item:hover {
+  background: linear-gradient(135deg,
+    rgba(201, 168, 76, 0.11) 0%,
+    rgba(13, 20, 33, 0.6) 100%);
+  border-left-color: var(--gold-300);
+  transform: translateX(3px);
+  transition: all 0.25s ease;
+}
+
+.modal-citation-glyph {
+  font-size: 2rem;
+  line-height: 1;
+  color: var(--gold-500);
+  opacity: 0.6;
+  flex-shrink: 0;
+  font-family: Georgia, serif;
+  margin-top: -0.25rem;
+}
+
+.modal-citation-text {
+  font-family: 'Crimson Text', Georgia, serif;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  margin: 0;
+  font-style: italic;
+}
+
+@keyframes citationFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ==========================================================================
+   CAROUSEL EXPANDIDO — CONTADOR E PROGRESSO
+   ========================================================================== */
+
+.quote-counter {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-align: center;
+  margin-top: 0.5rem;
+  letter-spacing: 0.06em;
+  opacity: 0.7;
+}
+
+/* Responsivo — citações do modal */
+@media (max-width: 600px) {
+  .modal-citation-item {
+    padding: 0.85rem 1rem;
+  }
+  .modal-citation-glyph {
+    font-size: 1.5rem;
+  }
+  .modal-citation-text {
+    font-size: 0.95rem;
+  }
+  .citations-title {
+    font-size: 0.95rem;
+  }
+}

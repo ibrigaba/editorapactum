@@ -623,46 +623,10 @@ const AUTHORS_DATABASE = [
 ];
 
 // ==========================================================================
-// CITAÇÕES PARA O CAROUSEL DOS MESTRES PURITANOS
+// CITAÇÕES PARA O CAROUSEL — usa CAROUSEL_QUOTES de citacoes.js (55 entradas)
+// PURITAN_QUOTES mantido como alias para compatibilidade
 // ==========================================================================
-const PURITAN_QUOTES = [
-  {
-    quote: "O contentamento é uma gema preciosa que enriquece a alma nas maiores pobrezas terrenas.",
-    author: "Thomas Watson",
-    book: "A Arte do Contentamento Divino",
-    bookId: "arte-contentamento-divino"
-  },
-  {
-    quote: "Há em Cristo mais misericórdia para nos abraçar e curar do que pecado em nós para nos condenar.",
-    author: "Richard Sibbes",
-    book: "O Glorioso Banquete do Evangelho",
-    bookId: "glorioso-banquete-evangelho"
-  },
-  {
-    quote: "Nas horas em que a luz do Seu rosto parece oculta, apoie-se firme no braço invencível do Seu poder.",
-    author: "Thomas Goodwin",
-    book: "O Filho da Luz Caminhando em Trevas",
-    bookId: "filho-luz-caminhando-trevas"
-  },
-  {
-    quote: "A oração secreta é a chave de ouro que abre o cofre de misericórdias inesgotáveis de Deus.",
-    author: "Thomas Brooks",
-    book: "A Chave Secreta do Céu",
-    bookId: "chave-secreta-ceu"
-  },
-  {
-    quote: "As providências de Deus são como caracteres hebraicos: compreendem-se melhor quando lidas no final.",
-    author: "John Flavel",
-    book: "O Mistério da Providência",
-    bookId: "misterio-providencia"
-  },
-  {
-    quote: "As curvaturas que Deus traça em nossa jornada destinam-se a dobrar o nosso orgulho para a santidade.",
-    author: "Thomas Boston",
-    book: "O Quinhão Tortuoso",
-    bookId: "quinhao-tortuoso"
-  }
-];
+const PURITAN_QUOTES = (typeof CAROUSEL_QUOTES !== 'undefined') ? CAROUSEL_QUOTES : [];
 
 // ==========================================================================
 // ESTADO GLOBAL & WISHLIST (FAVORITOS)
@@ -1058,7 +1022,9 @@ function initQuotesCarousel() {
   if (!quoteText || !quoteAuthor) return;
 
   if (quoteIndicators) {
-    quoteIndicators.innerHTML = PURITAN_QUOTES.map((_, i) => `
+    // Renderiza apenas 10 indicadores (pontos) para não poluir visualmente com 55
+    const visibleDots = Math.min(PURITAN_QUOTES.length, 10);
+    quoteIndicators.innerHTML = Array.from({ length: visibleDots }, (_, i) => `
       <button class="quote-dot ${i === 0 ? 'active' : ''}" onclick="goToQuote(${i})" aria-label="Citação ${i + 1}"></button>
     `).join("");
   }
@@ -1095,7 +1061,7 @@ function showQuote(index) {
     }
 
     document.querySelectorAll(".quote-dot").forEach((dot, i) => {
-      dot.classList.toggle("active", i === index);
+      dot.classList.toggle("active", i === (index % 10));
     });
 
     if (quoteBox) {
@@ -1221,6 +1187,8 @@ function openBookModal(bookId) {
         </div>
       </div>
     </div>
+
+    ${buildModalCitations(book.id)}
   `;
 
   modalOverlay.classList.add("active");
@@ -1264,6 +1232,34 @@ function showToast(msg) {
   window.toastTimeout = setTimeout(() => {
     toast.classList.remove("show");
   }, 3200);
+}
+
+// ==========================================================================
+// BLOCO DE CITAÇÕES DO MODAL — 4+ citações por ebook
+// ==========================================================================
+function buildModalCitations(bookId) {
+  const list = (typeof CITACOES_POR_LIVRO !== 'undefined') ? CITACOES_POR_LIVRO[bookId] : null;
+  if (!list || list.length === 0) return '';
+
+  const items = list.map((q, i) => `
+    <div class="modal-citation-item" style="animation-delay: ${i * 0.08}s">
+      <span class="modal-citation-glyph">❝</span>
+      <p class="modal-citation-text">${q}</p>
+    </div>
+  `).join('');
+
+  return `
+    <div class="modal-citations-section">
+      <div class="modal-citations-header">
+        <span class="citations-icon">✦</span>
+        <h3 class="citations-title">Citações Selecionadas da Obra</h3>
+        <span class="citations-icon">✦</span>
+      </div>
+      <div class="modal-citations-grid">
+        ${items}
+      </div>
+    </div>
+  `;
 }
 
 function closeBookModal() {
