@@ -2,62 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
-  <!-- Página Principal -->
+  <!-- Página Principal (SPA — página única) -->
   <url>
     <loc>https://editorapactum.vercel.app/</loc>
     <lastmod>2026-08-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+
+    <!-- Logo -->
     <image:image>
       <image:loc>https://editorapactum.vercel.app/logo.png</image:loc>
       <image:title>Editora Pactum — Logo Oficial</image:title>
       <image:caption>Selo oficial da Editora Pactum: Tradição, Teologia e Excelência</image:caption>
     </image:image>
-  </url>
 
-  <!-- Seção: Catálogo de Obras -->
-  <url>
-    <loc>https://editorapactum.vercel.app/#catalogo</loc>
-    <lastmod>2026-08-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <!-- Seção: Nossa Vocação (Sobre) -->
-  <url>
-    <loc>https://editorapactum.vercel.app/#sobre</loc>
-    <lastmod>2026-08-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Seção: Vozes dos Mestres (Citações) -->
-  <url>
-    <loc>https://editorapactum.vercel.app/#citacoes</loc>
-    <lastmod>2026-08-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <!-- Seção: Autores -->
-  <url>
-    <loc>https://editorapactum.vercel.app/#autores</loc>
-    <lastmod>2026-08-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Seção: Contato -->
-  <url>
-    <loc>https://editorapactum.vercel.app/#contato</loc>
-    <lastmod>2026-08-23</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-
-  <!-- Capas dos Livros (Imagens indexáveis) -->
-  <url>
-    <loc>https://editorapactum.vercel.app/</loc>
+    <!-- Capas dos Livros -->
     <image:image>
       <image:loc>https://editorapactum.vercel.app/capas/pentateuco_interlinear.jpg</image:loc>
       <image:title>Pentateuco Interlinear Hebraico-Português</image:title>
@@ -82,6 +41,31 @@
       <image:loc>https://editorapactum.vercel.app/capas/misterio_providencia.jpg</image:loc>
       <image:title>O Mistério da Providência — John Flavel</image:title>
       <image:caption>Capa do livro O Mistério da Providência de John Flavel, Clássicos Puritanos</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://editorapactum.vercel.app/capas/biblia_profetas_maiores.jpg</image:loc>
+      <image:title>Bíblia Interlinear: Profetas Maiores</image:title>
+      <image:caption>Capa da Bíblia Interlinear Hebraico-Português Profetas Maiores</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://editorapactum.vercel.app/capas/biblia_livros_historicos.jpg</image:loc>
+      <image:title>Bíblia Interlinear: Livros Históricos</image:title>
+      <image:caption>Capa da Bíblia Interlinear Hebraico-Português Livros Históricos</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://editorapactum.vercel.app/capas/chave_secreta_ceu.jpg</image:loc>
+      <image:title>A Chave Secreta do Céu — Thomas Brooks</image:title>
+      <image:caption>Capa do livro A Chave Secreta do Céu de Thomas Brooks</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://editorapactum.vercel.app/capas/glorioso_banquete_evangelho.jpg</image:loc>
+      <image:title>O Glorioso Banquete do Evangelho — Richard Sibbes</image:title>
+      <image:caption>Capa do livro O Glorioso Banquete do Evangelho de Richard Sibbes</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://editorapactum.vercel.app/capas/chamado_nao_convertidos.jpg</image:loc>
+      <image:title>Um Chamado aos Não Convertidos — Richard Baxter</image:title>
+      <image:caption>Capa do livro Um Chamado aos Não Convertidos de Richard Baxter</image:caption>
     </image:image>
   </url>
 
