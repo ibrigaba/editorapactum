@@ -1,0 +1,30 @@
+# ==============================================================
+# Editora Pactum — robots.txt
+# https://editorapactum.vercel.app/
+# ==============================================================
+
+# Permitir todos os crawlers
+User-agent: *
+Allow: /
+
+# Bloquear scripts/assets desnecessários para indexação
+Disallow: /*.py$
+Disallow: /*.ps1$
+Disallow: /*.json$
+
+# Google specifics
+User-agent: Googlebot
+Allow: /
+Allow: /capas/
+Allow: /logo.png
+
+User-agent: Googlebot-Image
+Allow: /capas/
+Allow: /logo.png
+Allow: /logo_gold.png
+
+# Sitemap
+Sitemap: https://editorapactum.vercel.app/sitemap.xml
+
+# Host canônico
+Host: https://editorapactum.vercel.app

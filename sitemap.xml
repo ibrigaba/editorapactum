@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- Página Principal -->
+  <url>
+    <loc>https://editorapactum.vercel.app/</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://editorapactum.vercel.app/logo.png</image:loc>
+      <image:title>Editora Pactum — Logo Oficial</image:title>
+      <image:caption>Selo oficial da Editora Pactum: Tradição, Teologia e Excelência</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Seção: Catálogo de Obras -->
+  <url>
+    <loc>https://editorapactum.vercel.app/#catalogo</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Seção: Nossa Vocação (Sobre) -->
+  <url>
+    <loc>https://editorapactum.vercel.app/#sobre</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Seção: Vozes dos Mestres (Citações) -->
+  <url>
+    <loc>https://editorapactum.vercel.app/#citacoes</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Seção: Autores -->
+  <url>
+    <loc>https://editorapactum.vercel.app/#autores</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Seção: Contato -->
+  <url>
+    <loc>https://editorapactum.vercel.app/#contato</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Capas dos Livros (Imagens indexáveis) -->
+  <url>
+    <loc>https://editorapactum.vercel.app/</loc>
+    <image:image>
+      <image:loc>https://editorapactum.vercel.app/capas/pentateuco_interlinear.jpg</image:loc>
+      <image:title>Pentateuco Interlinear Hebraico-Português</image:title>
+      <image:caption>Capa do livro O Pentateuco Interlinear Hebraico-Português da Editora Pactum</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://editorapactum.vercel.app/capas/biblia_interlinear_hg_vol1.jpg</image:loc>
+      <image:title>Bíblia Interlinear Hebraico-Grego Vol. 1</image:title>
+      <image:caption>Capa da Bíblia Interlinear Hebraico-Grego Volume 1 Pentateuco</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://editorapactum.vercel.app/capas/arte_contentamento_divino.jpg</image:loc>
+      <image:title>A Arte do Contentamento Divino — Thomas Watson</image:title>
+      <image:caption>Capa do livro A Arte do Contentamento Divino de Thomas Watson, Clássicos Puritanos</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://editorapactum.vercel.app/capas/nt_interlinear_grego_pt.jpg</image:loc>
+      <image:title>Novo Testamento Interlinear Grego-Português</image:title>
+      <image:caption>Capa do Novo Testamento Interlinear Grego-Português da Editora Pactum</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://editorapactum.vercel.app/capas/misterio_providencia.jpg</image:loc>
+      <image:title>O Mistério da Providência — John Flavel</image:title>
+      <image:caption>Capa do livro O Mistério da Providência de John Flavel, Clássicos Puritanos</image:caption>
+    </image:image>
+  </url>
+
+</urlset>
