@@ -1,6 +1,6 @@
 # ==============================================================
 # Editora Pactum — robots.txt
-# https://editorapactum.vercel.app/
+# https://www.editorapactum.com.br/
 # ==============================================================
 
 # Permitir todos os crawlers
@@ -24,7 +24,7 @@ Allow: /logo.png
 Allow: /logo_gold.png
 
 # Sitemap
-Sitemap: https://editorapactum.vercel.app/sitemap.xml
+Sitemap: https://www.editorapactum.com.br/sitemap.xml
 
 # Host canônico
-Host: https://editorapactum.vercel.app
+Host: https://www.editorapactum.com.br

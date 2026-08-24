@@ -4,66 +4,66 @@
 
   <!-- Página Principal (SPA — página única) -->
   <url>
-    <loc>https://editorapactum.vercel.app/</loc>
+    <loc>https://www.editorapactum.com.br/</loc>
     <lastmod>2026-08-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
 
     <!-- Logo -->
     <image:image>
-      <image:loc>https://editorapactum.vercel.app/logo.png</image:loc>
+      <image:loc>https://www.editorapactum.com.br/logo.png</image:loc>
       <image:title>Editora Pactum — Logo Oficial</image:title>
       <image:caption>Selo oficial da Editora Pactum: Tradição, Teologia e Excelência</image:caption>
     </image:image>
 
     <!-- Capas dos Livros -->
     <image:image>
-      <image:loc>https://editorapactum.vercel.app/capas/pentateuco_interlinear.jpg</image:loc>
+      <image:loc>https://www.editorapactum.com.br/capas/pentateuco_interlinear.jpg</image:loc>
       <image:title>Pentateuco Interlinear Hebraico-Português</image:title>
       <image:caption>Capa do livro O Pentateuco Interlinear Hebraico-Português da Editora Pactum</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://editorapactum.vercel.app/capas/biblia_interlinear_hg_vol1.jpg</image:loc>
+      <image:loc>https://www.editorapactum.com.br/capas/biblia_interlinear_hg_vol1.jpg</image:loc>
       <image:title>Bíblia Interlinear Hebraico-Grego Vol. 1</image:title>
       <image:caption>Capa da Bíblia Interlinear Hebraico-Grego Volume 1 Pentateuco</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://editorapactum.vercel.app/capas/arte_contentamento_divino.jpg</image:loc>
+      <image:loc>https://www.editorapactum.com.br/capas/arte_contentamento_divino.jpg</image:loc>
       <image:title>A Arte do Contentamento Divino — Thomas Watson</image:title>
       <image:caption>Capa do livro A Arte do Contentamento Divino de Thomas Watson, Clássicos Puritanos</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://editorapactum.vercel.app/capas/nt_interlinear_grego_pt.jpg</image:loc>
+      <image:loc>https://www.editorapactum.com.br/capas/nt_interlinear_grego_pt.jpg</image:loc>
       <image:title>Novo Testamento Interlinear Grego-Português</image:title>
       <image:caption>Capa do Novo Testamento Interlinear Grego-Português da Editora Pactum</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://editorapactum.vercel.app/capas/misterio_providencia.jpg</image:loc>
+      <image:loc>https://www.editorapactum.com.br/capas/misterio_providencia.jpg</image:loc>
       <image:title>O Mistério da Providência — John Flavel</image:title>
       <image:caption>Capa do livro O Mistério da Providência de John Flavel, Clássicos Puritanos</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://editorapactum.vercel.app/capas/biblia_profetas_maiores.jpg</image:loc>
+      <image:loc>https://www.editorapactum.com.br/capas/biblia_profetas_maiores.jpg</image:loc>
       <image:title>Bíblia Interlinear: Profetas Maiores</image:title>
       <image:caption>Capa da Bíblia Interlinear Hebraico-Português Profetas Maiores</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://editorapactum.vercel.app/capas/biblia_livros_historicos.jpg</image:loc>
+      <image:loc>https://www.editorapactum.com.br/capas/biblia_livros_historicos.jpg</image:loc>
       <image:title>Bíblia Interlinear: Livros Históricos</image:title>
       <image:caption>Capa da Bíblia Interlinear Hebraico-Português Livros Históricos</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://editorapactum.vercel.app/capas/chave_secreta_ceu.jpg</image:loc>
+      <image:loc>https://www.editorapactum.com.br/capas/chave_secreta_ceu.jpg</image:loc>
       <image:title>A Chave Secreta do Céu — Thomas Brooks</image:title>
       <image:caption>Capa do livro A Chave Secreta do Céu de Thomas Brooks</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://editorapactum.vercel.app/capas/glorioso_banquete_evangelho.jpg</image:loc>
+      <image:loc>https://www.editorapactum.com.br/capas/glorioso_banquete_evangelho.jpg</image:loc>
       <image:title>O Glorioso Banquete do Evangelho — Richard Sibbes</image:title>
       <image:caption>Capa do livro O Glorioso Banquete do Evangelho de Richard Sibbes</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://editorapactum.vercel.app/capas/chamado_nao_convertidos.jpg</image:loc>
+      <image:loc>https://www.editorapactum.com.br/capas/chamado_nao_convertidos.jpg</image:loc>
       <image:title>Um Chamado aos Não Convertidos — Richard Baxter</image:title>
       <image:caption>Capa do livro Um Chamado aos Não Convertidos de Richard Baxter</image:caption>
     </image:image>
