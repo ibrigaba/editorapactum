@@ -557,6 +557,58 @@ const BOOKS_DATABASE = [
     format: "eBook Kindle & KU",
     quote: "Texte Grec Koinè avec translitération et traduction mot à mot pour l'étude théologique rigoureuse.",
     synopsis: "Texte Grec Koinè avec translitération et traduction mot à mot en français alignée sur la tradition Louis Segond 1910 pour l'étude théologique rigoureuse."
+  },
+  // --- JONATHAN EDWARDS (3 NOVOS LANÇAMENTOS) ---
+  {
+    id: "edwards-humilde-tentativa",
+    title: "Uma Humilde Tentativa: Promovendo a Oração Unida pelo Avivamento da Igreja de Cristo",
+    shortTitle: "Uma Humilde Tentativa: Oração e Avivamento",
+    author: "Jonathan Edwards",
+    category: "puritano",
+    categoryLabel: "Clássicos Puritanos",
+    price: "R$ 7,99",
+    numPrice: 7.99,
+    asin: "B0HG7R3PV9",
+    cover: "capas/edwards-humilde-tentativa.jpg",
+    language: "Português",
+    pages: "13 Capítulos / Zacarias 8:20-22",
+    format: "eBook Kindle & KU",
+    quote: "Quando Deus está prestes a conceder grandes misericórdias à Sua Igreja, é Sua vontade que isso seja precedido por orações extraordinárias do Seu povo.",
+    synopsis: "O histórico apelo de Jonathan Edwards para uma convocação extraordinária e visível de oração unida pelo avivamento da Igreja e avanço glorioso do Reino de Cristo. A obra profética que acendeu o movimento de oração global e inspirou os maiores pioneiros missionários da era moderna."
+  },
+  {
+    id: "edwards-qualificacoes-comunhao",
+    title: "Qualificações para a Comunhão: A Pureza dos Sacramentos e da Admissão à Igreja Visível",
+    shortTitle: "Qualificações para a Comunhão",
+    author: "Jonathan Edwards",
+    category: "puritano",
+    categoryLabel: "Clássicos Puritanos",
+    price: "R$ 7,99",
+    numPrice: 7.99,
+    asin: "B0HG7S6N5S",
+    cover: "capas/edwards-qualificacoes-comunhao.jpg",
+    language: "Português",
+    pages: "Tratado Eclesiológico / 20 Objeções",
+    format: "eBook Kindle & KU",
+    quote: "A mesa do Senhor pertence àqueles que professam abertamente um devido amor a Cristo em seus corações, e não apenas uma opinião correta em seus juízos.",
+    synopsis: "Um monumento inigualável de erudição bíblica, fidelidade pactual e coragem pastoral. Edwards defende a pureza da Ceia do Senhor e a dignidade dos sacramentos, estabelecendo as bases bíblicas para a admissão à membresia da Igreja com a refutação magistral de 20 objeções teológicas."
+  },
+  {
+    id: "edwards-verdadeira-graca",
+    title: "A Verdadeira Graça Distinta da Experiência dos Demônios",
+    shortTitle: "A Verdadeira Graça vs. Demônios",
+    author: "Jonathan Edwards",
+    category: "puritano",
+    categoryLabel: "Clássicos Puritanos",
+    price: "R$ 5,99",
+    numPrice: 5.99,
+    asin: "B0HG7R3PV9",
+    cover: "capas/edwards-verdadeira-graca.jpg",
+    language: "Português",
+    pages: "Sermão do Sínodo / Tiago 2:19",
+    format: "eBook Kindle & KU",
+    quote: "Crer nas doutrinas meramente pela força da especulação intelectual não é evidência de graça. Os demônios creem e tremem; a graça salvadora consiste no amor santo à excelência de Deus.",
+    synopsis: "Pregado perante o Sínodo de Nova York, este tratado é uma das análises mais cirúrgicas já escritas sobre o autoexame e o discernimento espiritual. Edwards expõe a diferença insuperável entre a fé puramente ortodoxa dos demônios e o amor santo vivificado pelo Espírito Santo no coração do crente."
   }
 ];
 
@@ -564,6 +616,13 @@ const BOOKS_DATABASE = [
 // BANCO DE DADOS DOS AUTORES
 // ==========================================================================
 const AUTHORS_DATABASE = [
+  {
+    name: "Jonathan Edwards",
+    era: "1703 – 1758",
+    desc: "O maior filósofo e teólogo das Américas, líder do Primeiro Grande Despertamento e mestre insuperável no discernimento dos afetos espirituais.",
+    worksCount: "3 Títulos no Catálogo",
+    famousQuote: "A verdadeira religião consiste, em grande medida, em santos afetos e no deleite pela beleza da divina excelência."
+  },
   {
     name: "Thomas Watson",
     era: "1620 – 1686",

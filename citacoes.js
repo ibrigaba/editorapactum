@@ -130,9 +130,39 @@ const CITACOES_POR_LIVRO = {
  "Mas, de acordo com essa doutrina, um homem piedoso não pode ter certeza de sua perseverança na graça; pois não posso ter certeza de nenhuma misericórdia sem a promessa de Deus.",
  ],
 
+ "edwards-humilde-tentativa": [
+ "Quando Deus está prestes a conceder grandes misericórdias à Sua Igreja, é Sua vontade que isso seja precedido por orações extraordinárias do Seu povo.",
+ "Que Deus derrame abundantemente sobre todo o Seu povo o Espírito de graça e de súplicas, preparando os corações para o glorioso avanço do Reino de Cristo.",
+ "A união do povo de Deus em oração fervorosa é predita nas Escrituras como algo aceitável ao Senhor e acompanhado de glorioso sucesso espiritual.",
+ "A oração extraordinária e perseverante é o meio supremo pelo qual a Igreja clama pelo derramamento do Espírito e pela restauração de Sião.",
+ "Não há nada mais agradável a Cristo do que ver Seus redimidos em concerto de oração, suplicando em uníssono pelo triunfo do Evangelho na terra.",
+ "O avivamento da Igreja de Cristo não virá pela força humana, mas quando o povo da aliança se prostrar em intercessão unida diante do Trono da Graça.",
+ ],
+
+ "edwards-qualificacoes-comunhao": [
+ "A mesa do Senhor pertence àqueles que professam abertamente um devido amor a Cristo em seus corações, e não apenas uma opinião correta em seus juízos.",
+ "A natureza das coisas e o testemunho das Escrituras exigem que o povo de Cristo faça uma profissão visível de piedade real e fé salvadora.",
+ "Os sacramentos são selos da aliança da graça; admitir deliberadamente aqueles desprovidos de regeneração é profanar a mesa sagrada do Salvador.",
+ "A Igreja visível deve ser composta por aqueles que, segundo o juízo da caridade iluminada pela Palavra, manifestam os frutos da verdadeira santidade.",
+ "A pureza da Igreja e a glória do Redentor exigem que os privilégios da comunhão dos santos sejam guardados com zelo bíblico e fidelidade pastoral.",
+ "Aquele que se aproxima dos santos sacramentos sem a veste nupcial da justiça de Cristo traz juízo sobre si e obscurece a nobreza da Noiva do Cordeiro.",
+ ],
+
+ "edwards-verdadeira-graca": [
+ "Crer nas doutrinas meramente pela força da especulação intelectual não é evidência de graça. Os demônios creem e tremem; a verdadeira graça consiste no amor santo a Deus.",
+ "Os demônios possuem ortodoxia especulativa e conhecem a verdade divina com clareza; contudo, estão absolutamente destituídos de qualquer amor à beleza moral de Deus.",
+ "Grandes angústias da consciência e terrores mentais diante da ira de Deus não são sinais infalíveis de conversão se não forem acompanhados do arrependimento evangélico.",
+ "A marca distintiva do eleito de Deus é o senso espiritual da doçura e da santidade da divina excelência comunicado pelo Espírito Santo à alma.",
+ "A verdadeira fé salvadora não é um mero assentimento frio da razão, mas a inclinação santa do coração que se deleita em Cristo acima de todas as coisas.",
+ "Nada do que os demônios experimentam ou são capazes de sentir em suas faculdades naturais pode constituir evidência de regeneração e vida eterna.",
+ ],
+
 };
 
 const CAROUSEL_QUOTES = [
+ { quote: "Quando Deus está prestes a conceder grandes misericórdias à Sua Igreja, é Sua vontade que isso seja precedido por orações extraordinárias do Seu povo.", author: "Jonathan Edwards", book: "Uma Humilde Tentativa", bookId: "edwards-humilde-tentativa" },
+ { quote: "Crer nas doutrinas meramente pela força da especulação intelectual não é evidência de graça. Os demônios creem e tremem; a verdadeira graça consiste no amor santo a Deus.", author: "Jonathan Edwards", book: "A Verdadeira Graça", bookId: "edwards-verdadeira-graca" },
+ { quote: "A mesa do Senhor pertence àqueles que professam abertamente um devido amor a Cristo em seus corações, e não apenas uma opinião correta em seus juízos.", author: "Jonathan Edwards", book: "Qualificações para a Comunhão", bookId: "edwards-qualificacoes-comunhao" },
  { quote: "Sim, que Deus tenha a Sua vontade, para a Sua própria glória — \"se for da vontade de Deus\", diz o apóstolo — em nossos sofrimentos, aquieta abundantemente o coração em tudo.", author: "Thomas Goodwin", book: "A Paciência e Sua Obra Perfeita", bookId: "paciencia-obra-perfeita" },
  { quote: "Um homem não pode esperar pela glória da alma e do corpo sem que o Espírito, que levanta a fé para crer e a esperança para esperar, purifique, ajuste e prepare o homem para essa condição gloriosa.", author: "Richard Sibbes", book: "O Glorioso Banquete do Evangelho", bookId: "glorioso-banquete-evangelho" },
  { quote: "A adversidade no quinhão dá origem a muitos atos de fé, esperança, amor, abnegação, resignação e outras graças; a muitos suspiros, anseios e gemidos celestiais que, de outra forma, não seriam produzidos.", author: "Thomas Boston", book: "O Quinhão Tortuoso", bookId: "quinhao-tortuoso" },
