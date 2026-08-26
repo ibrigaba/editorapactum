@@ -1,12 +1,12 @@
 /**
  * EDITORA PACTUM — JAVASCRIPT PRINCIPAL (VIBRANT & INTERACTIVE)
- * Catálogo Completo (32 Livros com Preços Oficiais em BRL), 
+ * Catálogo Completo (36 Livros com Preços Oficiais em BRL), 
  * Efeitos 3D Tilt, Favoritos (Wishlist), Busca Rápida, Filtros por Preço e Categoria,
  * Modal Interativo com Navegação Entre Obras, Citações dos Mestres e Web Audio FX.
  */
 
 // ==========================================================================
-// BANCO DE DADOS DOS LIVROS (32 TÍTULOS COM ASIN, PREÇOS EM BRL E CAPAS REAIS)
+// BANCO DE DADOS DOS LIVROS (36 TÍTULOS COM ASIN, PREÇOS EM BRL E CAPAS REAIS)
 // ==========================================================================
 const BOOKS_DATABASE = [
   // --- BÍBLIAS INTERLINEARES (PORTUGUÊS) ---
@@ -29,13 +29,13 @@ const BOOKS_DATABASE = [
   },
   {
     id: "biblia-interlinear-hg-vol1",
-    title: "Bíblia Interlinear Hebraico–Grego — Volume 1: Pentateuco",
+    title: "Bíblia Interlinear Hebraico–Grego — Volume 1: Pentateuco: Hebraico Massorético, Septuaginta Grega, Transliteração Fonética e Tradução Literal (Gênesis a Deuteronômio)",
     shortTitle: "Bíblia Interlinear Hebraico–Grego Vol. 1: Pentateuco",
     author: "Editora Pactum",
     category: "interlinear",
     categoryLabel: "Interlinear Poliglota",
-    price: "R$ 29,90",
-    numPrice: 29.90,
+    price: "R$ 31,99",
+    numPrice: 31.99,
     asin: "B0HFTTTT1Z",
     cover: "capas/biblia_interlinear_hg_vol1.jpg",
     language: "Hebraico / Grego / Português",
@@ -45,72 +45,72 @@ const BOOKS_DATABASE = [
     synopsis: "Edição monumental reunindo o Hebraico Massorético, a Septuaginta Grega (LXX), transliteração fonética completa e tradução literal alinhada palavra por palavra."
   },
   {
-    id: "biblia-profetas-maiores",
-    title: "Bíblia Interlinear Hebraico-Português: Profetas Maiores",
-    shortTitle: "Bíblia Interlinear: Profetas Maiores",
+    id: "biblia-interlinear-hg-vol2",
+    title: "Bíblia Interlinear Hebraico–Grego (Septuaginta) — Volume 2: Livros Históricos: Texto Massorético (BHS), Septuaginta (LXX), Transliteração, Glosas Morfológicas, Tradução Literal e Almeida RA",
+    shortTitle: "Bíblia Interlinear Hebraico–Grego Vol. 2: Livros Históricos",
     author: "Editora Pactum",
     category: "interlinear",
-    categoryLabel: "Interlinear AT",
-    price: "R$ 17,99",
-    numPrice: 17.99,
-    asin: "B0HDFPGNN3",
-    cover: "capas/biblia_profetas_maiores.jpg",
-    language: "Hebraico / Português",
-    pages: "Isaías a Daniel",
-    format: "eBook Kindle & KU",
-    quote: "De Isaías a Daniel: a majestade profética preservada no idioma do pacto com aparato de notas exegéticas.",
-    synopsis: "Texto Hebraico Original dos Profetas Maiores (Isaías, Jeremias, Lamentações, Ezequiel e Daniel), com transliteração fonética precisa e tradução exegética contextual versículo por versículo."
-  },
-  {
-    id: "biblia-livros-historicos",
-    title: "Bíblia Interlinear Hebraico-Português: Livros Históricos",
-    shortTitle: "Bíblia Interlinear: Livros Históricos",
-    author: "Editora Pactum",
-    category: "interlinear",
-    categoryLabel: "Interlinear AT",
-    price: "R$ 17,00",
-    numPrice: 17.00,
-    asin: "B0HDFPC4RM",
-    cover: "capas/biblia_livros_historicos.jpg",
-    language: "Hebraico / Português",
+    categoryLabel: "Interlinear Poliglota",
+    price: "R$ 30,93",
+    numPrice: 30.93,
+    asin: "B0GZLN6M7L",
+    cover: "capas/biblia_interlinear_hg_vol2.jpg",
+    language: "Hebraico / Grego / Português",
     pages: "Josué a Ester",
     format: "eBook Kindle & KU",
-    quote: "A narrativa providencial de Israel de Josué até Ester exposta com rigor semântico e transliteração fonética.",
-    synopsis: "Cobertura completa da narrativa histórica de Israel de Josué até Ester com texto hebraico original, vocalização massorética, transliteração fonética e aparato de notas exegéticas."
+    quote: "A narrativa providencial de Israel de Josué até Ester confrontada no Hebraico Massorético e na Septuaginta Grega com aparato de glosas morfológicas.",
+    synopsis: "Texto Massorético (BHS), Septuaginta Grega (LXX), transliteração fonética completa, glosas morfológicas analíticas, tradução literal e texto comparativo da Almeida Revista e Atualizada de Josué a Ester."
   },
   {
-    id: "biblia-profetas-menores",
-    title: "Bíblia Interlinear Hebraico-Português: Profetas Menores",
-    shortTitle: "Bíblia Interlinear: Profetas Menores",
+    id: "biblia-interlinear-hg-vol3",
+    title: "Bíblia Interlinear Hebraico–Grego (Septuaginta) — Volume 3: Poéticos e Sapienciais: Texto Massorético (BHS), Septuaginta (LXX), Transliteração, Glosas Morfológicas, Tradução Literal e Almeida RA",
+    shortTitle: "Bíblia Interlinear Hebraico–Grego Vol. 3: Poéticos e Sapienciais",
     author: "Editora Pactum",
     category: "interlinear",
-    categoryLabel: "Interlinear AT",
-    price: "R$ 15,00",
-    numPrice: 15.00,
-    asin: "B0HDGL26ZJ",
-    cover: "capas/biblia_profetas_menores.jpg",
-    language: "Hebraico / Português",
-    pages: "Oseias a Malaquias",
-    format: "eBook Kindle & KU",
-    quote: "Os doze profetas em texto hebraico integral com tradução analítica e fidelidade filológica irrepreensível.",
-    synopsis: "Os doze profetas menores em texto hebraico integral com tradução analítica, transliteração fonética de fácil leitura e fidelidade filológica rigorosa."
-  },
-  {
-    id: "biblia-livros-poeticos",
-    title: "Bíblia Interlinear Hebraico-Português: Livros Poéticos e de Sabedoria",
-    shortTitle: "Bíblia Interlinear: Livros Poéticos e Sabedoria",
-    author: "Editora Pactum",
-    category: "interlinear",
-    categoryLabel: "Interlinear AT",
-    price: "R$ 15,99",
-    numPrice: 15.99,
-    asin: "B0HDG2D5PD",
-    cover: "capas/biblia_livros_poeticos.jpg",
-    language: "Hebraico / Português",
+    categoryLabel: "Interlinear Poliglota",
+    price: "R$ 29,35",
+    numPrice: 29.35,
+    asin: "B0HGFTL65W",
+    cover: "capas/biblia_interlinear_hg_vol3.jpg",
+    language: "Hebraico / Grego / Português",
     pages: "Jó, Salmos, Provérbios, Eclesiastes, Cantares",
     format: "eBook Kindle & KU",
-    quote: "A sublime poesia hebraica e a sabedoria divina traduzidas com preservação lírica e precisão morfológica.",
-    synopsis: "A sublime poesia hebraica e a literatura sapiencial bíblica expostas com preservação métrica, vocabulário exegético contextual e transliteração detalhada."
+    quote: "A sublime poesia e literatura sapiencial hebraica confrontada com a Septuaginta Grega em minuciosa análise morfológica e fidelidade filológica.",
+    synopsis: "Os Livros Poéticos e Sapienciais (Jó, Salmos, Provérbios, Eclesiastes e Cantares) com Texto Massorético (BHS), Septuaginta (LXX), transliteração precisa, glosas morfológicas, tradução literal e Almeida RA."
+  },
+  {
+    id: "biblia-interlinear-hg-vol4",
+    title: "Bíblia Interlinear Hebraico–Grego (Septuaginta) — Volume 4: Profetas Maiores: Texto Massorético (BHS), Septuaginta (LXX), Transliteração, Glosas Morfológicas, Tradução Literal e Almeida RA",
+    shortTitle: "Bíblia Interlinear Hebraico–Grego Vol. 4: Profetas Maiores",
+    author: "Editora Pactum",
+    category: "interlinear",
+    categoryLabel: "Interlinear Poliglota",
+    price: "R$ 30,93",
+    numPrice: 30.93,
+    asin: "B0HGG2QS86",
+    cover: "capas/biblia_interlinear_hg_vol4.jpg",
+    language: "Hebraico / Grego / Português",
+    pages: "Isaías, Jeremias, Lamentações, Ezequiel e Daniel",
+    format: "eBook Kindle & KU",
+    quote: "De Isaías a Daniel: a majestade profética preservada no Texto Massorético e na Septuaginta Grega com aparato filológico exaustivo.",
+    synopsis: "Os Profetas Maiores (Isaías, Jeremias, Lamentações, Ezequiel e Daniel) com Texto Massorético (BHS), Septuaginta Grega (LXX), transliteração fonética, glosas morfológicas, tradução literal alinhada e texto de confronto Almeida RA."
+  },
+  {
+    id: "biblia-interlinear-hg-vol5",
+    title: "Bíblia Interlinear Hebraico–Grego (Septuaginta) — Volume 5: Profetas Menores: Texto Massorético (BHS), Septuaginta (LXX), Transliteração, Glosas Morfológicas, Tradução Literal e Almeida RA",
+    shortTitle: "Bíblia Interlinear Hebraico–Grego Vol. 5: Profetas Menores",
+    author: "Editora Pactum",
+    category: "interlinear",
+    categoryLabel: "Interlinear Poliglota",
+    price: "R$ 26,80",
+    numPrice: 26.80,
+    asin: "B0HGG3TPHR",
+    cover: "capas/biblia_interlinear_hg_vol5.jpg",
+    language: "Hebraico / Grego / Português",
+    pages: "Oseias a Malaquias (Os 12 Profetas)",
+    format: "eBook Kindle & KU",
+    quote: "Os doze profetas menores em texto hebraico e grego integral com tradução analítica, glosas morfológicas e fidelidade filológica irrepreensível.",
+    synopsis: "Os doze Profetas Menores (Oseias a Malaquias) em edição definitiva com Texto Massorético (BHS), Septuaginta (LXX), transliteração fonética, glosas morfológicas, tradução literal e Almeida RA."
   },
   {
     id: "nt-interlinear-grego-pt",
@@ -595,20 +595,40 @@ const BOOKS_DATABASE = [
   },
   {
     id: "edwards-verdadeira-graca",
-    title: "A Verdadeira Graça Distinta da Experiência dos Demônios",
-    shortTitle: "A Verdadeira Graça vs. Demônios",
+    title: "A Verdadeira Graça Distinta da Experiência dos Demônios: A Diferença Vital entre o Conhecimento Intelectual e o Amor Santo no Coração",
+    shortTitle: "A Verdadeira Graça vs. Experiência dos Demônios",
     author: "Jonathan Edwards",
     category: "puritano",
     categoryLabel: "Clássicos Puritanos",
-    price: "R$ 5,99",
-    numPrice: 5.99,
-    asin: "B0HG7R3PV9",
-    cover: "capas/edwards-verdadeira-graca.jpg",
+    price: "R$ 6,99",
+    numPrice: 6.99,
+    asin: "B0HGBSD579",
+    cover: "capas/edwards_verdadeira_graca.jpg",
     language: "Português",
     pages: "Sermão do Sínodo / Tiago 2:19",
     format: "eBook Kindle & KU",
     quote: "Crer nas doutrinas meramente pela força da especulação intelectual não é evidência de graça. Os demônios creem e tremem; a graça salvadora consiste no amor santo à excelência de Deus.",
     synopsis: "Pregado perante o Sínodo de Nova York, este tratado é uma das análises mais cirúrgicas já escritas sobre o autoexame e o discernimento espiritual. Edwards expõe a diferença insuperável entre a fé puramente ortodoxa dos demônios e o amor santo vivificado pelo Espírito Santo no coração do crente."
+  },
+  // --- GEORGE SWINNOCK (LANÇAMENTO CLÁSSICOS PURITANOS) ---
+  {
+    id: "swinnock-porta-salvacao",
+    title: "A Porta da Salvação Aberta pela Chave da Regeneração: A Natureza, a Necessidade, as Marcas e os Meios da Verdadeira Conversão",
+    shortTitle: "A Porta da Salvação: Chave da Regeneração",
+    author: "George Swinnock",
+    category: "puritano",
+    categoryLabel: "Clássicos Puritanos",
+    price: "R$ 12,99",
+    numPrice: 12.99,
+    asin: "B0H271D3F4",
+    paperbackAsin: "B0HGBKFVY3",
+    paperbackPrice: "$12,00 USD",
+    cover: "capas/swinnock_porta_salvacao.jpg",
+    language: "Português",
+    pages: "Tratado Monumental de Soteriologia",
+    format: "eBook Kindle & Capa Comum",
+    quote: "A regeneração não é uma mera reforma exterior dos costumes, mas a criação de uma nova criatura com um coração novo voltado para Deus.",
+    synopsis: "Uma das obras mais profundas e completas de toda a era puritana sobre a doutrina da regeneração. George Swinnock examina a natureza indispensável do novo nascimento, as marcas infalíveis da verdadeira conversão, as causas e os meios graciosos pelos quais o Espírito Santo ressuscita pecadores espiritualmente mortos para a vida em Cristo."
   }
 ];
 
@@ -622,6 +642,13 @@ const AUTHORS_DATABASE = [
     desc: "O maior filósofo e teólogo das Américas, líder do Primeiro Grande Despertamento e mestre insuperável no discernimento dos afetos espirituais.",
     worksCount: "3 Títulos no Catálogo",
     famousQuote: "A verdadeira religião consiste, em grande medida, em santos afetos e no deleite pela beleza da divina excelência."
+  },
+  {
+    name: "George Swinnock",
+    era: "1627 – 1673",
+    desc: "Proeminente pastor e teólogo puritano, célebre por sua eloquência magistral, ilustrações ricas e tratados monumentais sobre a regeneração e a santidade cristã.",
+    worksCount: "1 Título no Catálogo (Kindle & Capa Comum)",
+    famousQuote: "A regeneração é a ressurreição da alma das trevas do pecado para a gloriosa luz do amor de Cristo."
   },
   {
     name: "Thomas Watson",
@@ -915,7 +942,7 @@ function renderBooks() {
             
             <div class="book-ku-tag">
               <span class="ku-badge">Kindle Unlimited</span>
-              <span class="ku-sub">ou compra avulsa</span>
+              <span class="ku-sub">${book.paperbackAsin ? '+ Capa Comum' : 'ou compra avulsa'}</span>
             </div>
 
             <div class="book-meta">
@@ -1220,7 +1247,7 @@ function openBookModal(bookId) {
             <span class="spec-value price-highlight">${book.price}</span>
           </div>
           <div class="spec-card">
-            <span class="spec-label">Código ASIN</span>
+            <span class="spec-label">Código ASIN Kindle</span>
             <span class="spec-value">${book.asin}</span>
           </div>
           <div class="spec-card">
@@ -1231,12 +1258,27 @@ function openBookModal(bookId) {
             <span class="spec-label">Idioma / Abrangência</span>
             <span class="spec-value">${book.language}</span>
           </div>
+          ${book.paperbackAsin ? `
+          <div class="spec-card" style="border-color: rgba(201, 168, 76, 0.4); background: rgba(201, 168, 76, 0.08);">
+            <span class="spec-label">Livro Físico (Capa Comum)</span>
+            <span class="spec-value price-highlight" style="color: #ffd700;">${book.paperbackPrice || '$12,00 USD'}</span>
+          </div>
+          <div class="spec-card" style="border-color: rgba(201, 168, 76, 0.4); background: rgba(201, 168, 76, 0.08);">
+            <span class="spec-label">ASIN/ISBN Capa Comum</span>
+            <span class="spec-value">${book.paperbackAsin}</span>
+          </div>
+          ` : ''}
         </div>
 
         <div class="modal-footer-actions">
           <a href="${amazonUrl}" target="_blank" rel="noopener" class="btn btn-primary modal-btn-buy" onclick="playAudioFeedback('click')">
-            <span>Adquirir na Amazon Kindle</span> 🚀
+            <span>Comprar eBook Kindle</span> 🚀
           </a>
+          ${book.paperbackAsin ? `
+          <a href="https://www.amazon.com.br/dp/${book.paperbackAsin}?tag=editorapactum-20" target="_blank" rel="noopener" class="btn btn-primary modal-btn-paperback" style="background: linear-gradient(135deg, #d4af37, #aa7c11); color: #080d16; font-weight: 700;" onclick="playAudioFeedback('click')">
+            <span>Comprar Capa Comum</span> 📖
+          </a>
+          ` : ''}
           <a href="${whatsappUrl}" target="_blank" rel="noopener" class="btn btn-whatsapp modal-btn-share" title="Recomendar pelo WhatsApp">
             <span>WhatsApp</span> 💬
           </a>

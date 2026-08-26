@@ -6,10 +6,10 @@ import time
 asins = [
     ("pentateuco-interlinear", "B0HD2PC5YY"),
     ("biblia-interlinear-hg-vol1", "B0HFTTTT1Z"),
-    ("biblia-profetas-maiores", "B0HDFPGNN3"),
-    ("biblia-livros-historicos", "B0HDFPC4RM"),
-    ("biblia-profetas-menores", "B0HDGL26ZJ"),
-    ("biblia-livros-poeticos", "B0HDG2D5PD"),
+    ("biblia-interlinear-hg-vol2", "B0GZLN6M7L"),
+    ("biblia-interlinear-hg-vol3", "B0HGFTL65W"),
+    ("biblia-interlinear-hg-vol4", "B0HGG2QS86"),
+    ("biblia-interlinear-hg-vol5", "B0HGG3TPHR"),
     ("nt-interlinear-grego-pt", "B0H75RZF89"),
     ("arte-contentamento-divino", "B0H4267BD1"),
     ("chave-secreta-ceu", "B0H42BKKZT"),
@@ -36,6 +36,10 @@ asins = [
     ("nt-trilingue", "B0HBCRRWMV"),
     ("nt-interlinear-grego-es", "B0HBNGVCC5"),
     ("nt-interlinear-grego-fr", "B0HBFZKH4N"),
+    ("edwards-humilde-tentativa", "B0HG7R3PV9"),
+    ("edwards-qualificacoes-comunhao", "B0HG7S6N5S"),
+    ("edwards-verdadeira-graca", "B0HGBSD579"),
+    ("swinnock-porta-salvacao", "B0H271D3F4"),
 ]
 
 headers = {

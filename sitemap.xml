@@ -5,8 +5,8 @@
   <!-- Página Principal (SPA — página única) -->
   <url>
     <loc>https://www.editorapactum.com.br/</loc>
-    <lastmod>2026-08-23</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>daily</changefreq>
     <priority>1.0</priority>
 
     <!-- Logo -->
@@ -24,8 +24,38 @@
     </image:image>
     <image:image>
       <image:loc>https://www.editorapactum.com.br/capas/biblia_interlinear_hg_vol1.jpg</image:loc>
-      <image:title>Bíblia Interlinear Hebraico-Grego Vol. 1</image:title>
+      <image:title>Bíblia Interlinear Hebraico-Grego Vol. 1: Pentateuco</image:title>
       <image:caption>Capa da Bíblia Interlinear Hebraico-Grego Volume 1 Pentateuco</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.editorapactum.com.br/capas/biblia_interlinear_hg_vol2.jpg</image:loc>
+      <image:title>Bíblia Interlinear Hebraico-Grego Vol. 2: Livros Históricos</image:title>
+      <image:caption>Capa da Bíblia Interlinear Hebraico-Grego Volume 2 Livros Históricos</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.editorapactum.com.br/capas/biblia_interlinear_hg_vol3.jpg</image:loc>
+      <image:title>Bíblia Interlinear Hebraico-Grego Vol. 3: Poéticos e Sapienciais</image:title>
+      <image:caption>Capa da Bíblia Interlinear Hebraico-Grego Volume 3 Poéticos e Sapienciais</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.editorapactum.com.br/capas/biblia_interlinear_hg_vol4.jpg</image:loc>
+      <image:title>Bíblia Interlinear Hebraico-Grego Vol. 4: Profetas Maiores</image:title>
+      <image:caption>Capa da Bíblia Interlinear Hebraico-Grego Volume 4 Profetas Maiores</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.editorapactum.com.br/capas/biblia_interlinear_hg_vol5.jpg</image:loc>
+      <image:title>Bíblia Interlinear Hebraico-Grego Vol. 5: Profetas Menores</image:title>
+      <image:caption>Capa da Bíblia Interlinear Hebraico-Grego Volume 5 Profetas Menores</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.editorapactum.com.br/capas/edwards_verdadeira_graca.jpg</image:loc>
+      <image:title>A Verdadeira Graça Distinta da Experiência dos Demônios — Jonathan Edwards</image:title>
+      <image:caption>Capa do livro A Verdadeira Graça de Jonathan Edwards, Clássicos Puritanos</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.editorapactum.com.br/capas/swinnock_porta_salvacao.jpg</image:loc>
+      <image:title>A Porta da Salvação Aberta pela Chave da Regeneração — George Swinnock</image:title>
+      <image:caption>Capa do livro A Porta da Salvação de George Swinnock, Clássicos Puritanos</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://www.editorapactum.com.br/capas/arte_contentamento_divino.jpg</image:loc>
@@ -41,16 +71,6 @@
       <image:loc>https://www.editorapactum.com.br/capas/misterio_providencia.jpg</image:loc>
       <image:title>O Mistério da Providência — John Flavel</image:title>
       <image:caption>Capa do livro O Mistério da Providência de John Flavel, Clássicos Puritanos</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://www.editorapactum.com.br/capas/biblia_profetas_maiores.jpg</image:loc>
-      <image:title>Bíblia Interlinear: Profetas Maiores</image:title>
-      <image:caption>Capa da Bíblia Interlinear Hebraico-Português Profetas Maiores</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://www.editorapactum.com.br/capas/biblia_livros_historicos.jpg</image:loc>
-      <image:title>Bíblia Interlinear: Livros Históricos</image:title>
-      <image:caption>Capa da Bíblia Interlinear Hebraico-Português Livros Históricos</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://www.editorapactum.com.br/capas/chave_secreta_ceu.jpg</image:loc>

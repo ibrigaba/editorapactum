@@ -157,6 +157,15 @@ const CITACOES_POR_LIVRO = {
  "Nada do que os demônios experimentam ou são capazes de sentir em suas faculdades naturais pode constituir evidência de regeneração e vida eterna.",
  ],
 
+ "swinnock-porta-salvacao": [
+ "A regeneração não é uma mera pintura sobre madeira podre, mas a transformação total do coração pela graça soberana do Espírito.",
+ "Aquele que foi verdadeiramente regenerado tem uma nova natureza, novos princípios, novos afetos e uma nova meta: a glória eterna de Deus.",
+ "A fé que salva não consiste em crer que Cristo morreu por outros, mas em lançar-se inteiramente nos Seus braços como o único Salvador.",
+ "A alma sem o novo nascimento é como um corpo sem fôlego: morta para as coisas celestiais e incapaz de agradar ao Senhor.",
+ "Onde a regeneração entra pela porta da frente, o amor ao pecado é expulso pela porta dos fundos.",
+ "A conversão genuína muda o leito dos rios dos afetos humanos, voltando as correntes do coração para o oceano do amor divino.",
+ ],
+
 };
 
 const CAROUSEL_QUOTES = [
