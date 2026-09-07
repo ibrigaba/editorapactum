@@ -23,6 +23,16 @@ Allow: /capas/
 Allow: /logo.png
 Allow: /logo_gold.png
 
+# Google AdSense Crawlers
+User-agent: Mediapartners-Google
+Allow: /
+
+User-agent: AdsBot-Google
+Allow: /
+
+User-agent: AdsBot-Google-Mobile
+Allow: /
+
 # Sitemap
 Sitemap: https://www.editorapactum.com.br/sitemap.xml
 

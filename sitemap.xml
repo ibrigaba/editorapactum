@@ -5,7 +5,7 @@
   <!-- Página Principal (SPA — página única) -->
   <url>
     <loc>https://www.editorapactum.com.br/</loc>
-    <lastmod>2026-08-26</lastmod>
+    <lastmod>2026-09-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
 
@@ -87,6 +87,90 @@
       <image:title>Um Chamado aos Não Convertidos — Richard Baxter</image:title>
       <image:caption>Capa do livro Um Chamado aos Não Convertidos de Richard Baxter</image:caption>
     </image:image>
+  </url>
+
+  <!-- Quem Somos / Sobre a Editora -->
+  <url>
+    <loc>https://www.editorapactum.com.br/sobre.html</loc>
+    <lastmod>2026-09-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Artigo: O Legado da Teologia Puritana -->
+  <url>
+    <loc>https://www.editorapactum.com.br/artigo-legado-puritano.html</loc>
+    <lastmod>2026-09-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.editorapactum.com.br/capas/swinnock_porta_salvacao.jpg</image:loc>
+      <image:title>O Legado da Teologia Puritana — Editora Pactum</image:title>
+      <image:caption>A Porta da Salvação Aberta pela Chave da Regeneração de George Swinnock</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Artigo: A Importância da Bíblia Interlinear -->
+  <url>
+    <loc>https://www.editorapactum.com.br/artigo-biblia-interlinear-exegese.html</loc>
+    <lastmod>2026-09-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.editorapactum.com.br/capas/biblia_interlinear_hg_vol1.jpg</image:loc>
+      <image:title>A Importância da Bíblia Interlinear — Editora Pactum</image:title>
+      <image:caption>Bíblia Interlinear Hebraico-Grego Volume 1: Pentateuco</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Artigo: A Arte do Contentamento Divino -->
+  <url>
+    <loc>https://www.editorapactum.com.br/artigo-contentamento-thomas-watson.html</loc>
+    <lastmod>2026-09-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.editorapactum.com.br/capas/arte_contentamento_divino.jpg</image:loc>
+      <image:title>A Arte do Contentamento Divino — Thomas Watson</image:title>
+      <image:caption>Capa do livro A Arte do Contentamento Divino de Thomas Watson</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Artigo: Jonathan Edwards e o Discernimento Espiritual -->
+  <url>
+    <loc>https://www.editorapactum.com.br/artigo-verdadeira-graca-edwards.html</loc>
+    <lastmod>2026-09-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.editorapactum.com.br/capas/edwards_verdadeira_graca.jpg</image:loc>
+      <image:title>Jonathan Edwards e a Verdadeira Graça — Editora Pactum</image:title>
+      <image:caption>Capa do livro A Verdadeira Graça Distinta da Experiência dos Demônios</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Fale Conosco / Contato -->
+  <url>
+    <loc>https://www.editorapactum.com.br/contato.html</loc>
+    <lastmod>2026-09-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Política de Privacidade (Obrigatória AdSense) -->
+  <url>
+    <loc>https://www.editorapactum.com.br/politica-de-privacidade.html</loc>
+    <lastmod>2026-09-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Termos de Uso -->
+  <url>
+    <loc>https://www.editorapactum.com.br/termos-de-uso.html</loc>
+    <lastmod>2026-09-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
 
 </urlset>
