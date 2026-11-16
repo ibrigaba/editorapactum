@@ -676,6 +676,7 @@ const BOOKS_DATABASE = [
     numPrice: 10.99,
     asin: "B0HRQGLHKS",
     cover: "capas/love-cura-alma-abatida.jpg",
+    coverVersion: "2",
     language: "Português",
     pages: "17 Sermões / Salmo 42:11",
     format: "eBook Kindle & KU",
@@ -996,7 +997,9 @@ function renderBooks() {
     const amazonUrl = `https://www.amazon.com.br/dp/${book.asin}?tag=editorapactum-20`;
     const isFav = favs.includes(book.id);
     const safeTitle = escapeHtml(book.title);
-    const thumbSrc = `capas/thumbs/${book.id}.webp`;
+    const verSuffix = book.coverVersion ? `?v=${book.coverVersion}` : "";
+    const thumbSrc = `capas/thumbs/${book.id}.webp${verSuffix}`;
+    const coverSrc = `${book.cover}${verSuffix}`;
 
     return `
       <article class="book-card" data-id="${book.id}" style="animation-delay: ${Math.min(index * 0.04, 0.6)}s">
@@ -1010,7 +1013,7 @@ function renderBooks() {
             <div class="book-glare"></div>
             <picture>
               <source srcset="${thumbSrc}" type="image/webp">
-              <img src="${book.cover}" alt="${safeTitle}" class="book-cover-img" width="400" height="620" loading="lazy" decoding="async">
+              <img src="${coverSrc}" alt="${safeTitle}" class="book-cover-img" width="400" height="620" loading="lazy" decoding="async">
             </picture>
             <div class="book-quick-view-overlay">
               <span class="quick-view-text">✦ Ver Detalhes ✦</span>
@@ -1339,7 +1342,7 @@ function openBookModal(bookId) {
     <div class="modal-body-grid">
       <div class="modal-cover-column">
         <div class="modal-cover-3d-wrap">
-          <img src="${book.cover}" alt="${escapeHtml(book.title)}" class="modal-cover-img" decoding="async">
+          <img src="${book.cover}${book.coverVersion ? `?v=${book.coverVersion}` : ""}" alt="${escapeHtml(book.title)}" class="modal-cover-img" decoding="async">
         </div>
         <div class="modal-cover-badges">
           <span class="ku-badge-modal">✓ Incluso no Kindle Unlimited (R$ 0,00)</span>
