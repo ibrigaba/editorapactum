@@ -1,12 +1,12 @@
 /**
  * EDITORA PACTUM — JAVASCRIPT PRINCIPAL (VIBRANT & INTERACTIVE)
- * Catálogo Completo (36 Livros com Preços Oficiais em BRL), 
+ * Catálogo Completo (39 Livros com Preços Oficiais em BRL), 
  * Efeitos 3D Tilt, Favoritos (Wishlist), Busca Rápida, Filtros por Preço e Categoria,
  * Modal Interativo com Navegação Entre Obras, Citações dos Mestres e Web Audio FX.
  */
 
 // ==========================================================================
-// BANCO DE DADOS DOS LIVROS (36 TÍTULOS COM ASIN, PREÇOS EM BRL E CAPAS REAIS)
+// BANCO DE DADOS DOS LIVROS (39 TÍTULOS COM ASIN, PREÇOS EM BRL E CAPAS REAIS)
 // ==========================================================================
 const BOOKS_DATABASE = [
   // --- BÍBLIAS INTERLINEARES (PORTUGUÊS) ---
@@ -629,6 +629,58 @@ const BOOKS_DATABASE = [
     format: "eBook Kindle & Capa Comum",
     quote: "A regeneração não é uma mera reforma exterior dos costumes, mas a criação de uma nova criatura com um coração novo voltado para Deus.",
     synopsis: "Uma das obras mais profundas e completas de toda a era puritana sobre a doutrina da regeneração. George Swinnock examina a natureza indispensável do novo nascimento, as marcas infalíveis da verdadeira conversão, as causas e os meios graciosos pelos quais o Espírito Santo ressuscita pecadores espiritualmente mortos para a vida em Cristo."
+  },
+  // --- NOVOS LANÇAMENTOS (KEACH, SIBBES & CHRISTOPHER LOVE) ---
+  {
+    id: "keach-manifestacao-gloriosa-graca",
+    title: "A Manifestação da Gloriosa Graça: Exposição do Pacto da Paz: Catorze Sermões sobre a Aliança Eterna da Graça e a Obra Mediadora de Cristo",
+    shortTitle: "A Manifestação da Gloriosa Graça",
+    author: "Benjamin Keach",
+    category: "puritano",
+    categoryLabel: "Clássicos Puritanos",
+    price: "R$ 16,00",
+    numPrice: 16.00,
+    asin: "B0HRQS82WN",
+    cover: "capas/keach-manifestacao-gloriosa-graca.jpg",
+    language: "Português",
+    pages: "14 Sermões / Isaías 54:10",
+    format: "eBook Kindle & KU",
+    quote: "Deus primeiro escolheu seu Filho como o Representante, Cabeça Pactual e Fiador dos seus eleitos, e então tratou com Ele sobre os termos da nossa Paz.",
+    synopsis: "Publicado originalmente em Londres em 1698 pelo pastor batista particular Benjamin Keach — signatário da Confissão de Fé Batista de Londres de 1689 —, este clássico reúne catorze sermões expositivos sobre Isaías 54:10 desdobrando o conselho eterno do Pacto da Paz, a fiança mediadora de Cristo e a segurança inabalável da Aliança da Graça. Edição integral da Editora Pactum com prefácio histórico e 129 notas marginais originais."
+  },
+  {
+    id: "sibbes-desviado-que-retorna",
+    title: "O Desviado que Retorna: Misericórdia e Restauração em Oseias 14 — Dezesseis Sermões Expositivos",
+    shortTitle: "O Desviado que Retorna",
+    author: "Richard Sibbes",
+    category: "puritano",
+    categoryLabel: "Clássicos Puritanos",
+    price: "R$ 11,99",
+    numPrice: 11.99,
+    asin: "B0HRQNVW9M",
+    cover: "capas/sibbes-desviado-que-retorna.jpg",
+    language: "Português",
+    pages: "16 Sermões / Oseias 14",
+    format: "eBook Kindle & KU",
+    quote: "Deus concede a justificação antes da santificação; e, antes de libertar da culpa do pecado, Ele concede graça para confessar o pecado.",
+    synopsis: "O célebre 'Doutor Celestial' Richard Sibbes expõe todo o capítulo 14 de Oseias em dezesseis sermões magistrais sobre arrependimento genuíno, renúncia aos ídolos, cura da apostasia e restauração da alma pelo amor gratuito de Deus. Edição integral direta do texto clássico com prefácio histórico, 65 notas marginais e notas críticas restauradas."
+  },
+  {
+    id: "love-cura-alma-abatida",
+    title: "A Cura da Alma Abatida: Dezessete Sermões sobre o Salmo 42:11 para Sustentar Pecadores Desalentados",
+    shortTitle: "A Cura da Alma Abatida",
+    author: "Christopher Love",
+    category: "puritano",
+    categoryLabel: "Clássicos Puritanos",
+    price: "R$ 10,99",
+    numPrice: 10.99,
+    asin: "B0HRQGLHKS",
+    cover: "capas/love-cura-alma-abatida.jpg",
+    language: "Português",
+    pages: "17 Sermões / Salmo 42:11",
+    format: "eBook Kindle & KU",
+    quote: "Se há fé em ti, se há graça em tua alma, ainda que seja apenas como um grão de mostarda, uma pequena graça que brotou na alma brotará em tua alma para uma colheita de glória.",
+    synopsis: "Publicado originalmente em Londres em 1657 com prefácio de Edmund Calamy e Matthew Poole, este tratado clássico de medicina espiritual traz dezessete sermões de Christopher Love sobre o Salmo 42:11. O autor examina as raízes da depressão espiritual, distingue a tristeza piedosa do desespero paralisante e prescreve remédios bíblicos concretos para sustentar corações desalentados."
   }
 ];
 
@@ -636,6 +688,20 @@ const BOOKS_DATABASE = [
 // BANCO DE DADOS DOS AUTORES
 // ==========================================================================
 const AUTHORS_DATABASE = [
+  {
+    name: "Benjamin Keach",
+    era: "1640 – 1704",
+    desc: "Pastor batista particular inglês e signatário da Confissão de Fé de Londres (1689), mestre inigualável da Teologia Pactual e da obra mediadora de Cristo.",
+    worksCount: "1 Título no Catálogo",
+    famousQuote: "Deus primeiro escolheu seu Filho como o Representante, Cabeça Pactual e Fiador dos seus eleitos, e então tratou com Ele sobre os termos da nossa Paz."
+  },
+  {
+    name: "Christopher Love",
+    era: "1618 – 1651",
+    desc: "Pastor presbiteriano puritano célebre por sua pregação incisiva sobre casos de consciência, arrependimento e medicina espiritual para almas aflitas.",
+    worksCount: "1 Título no Catálogo",
+    famousQuote: "Se há fé em ti, ainda que seja apenas como um grão de mostarda, ela brotará para uma colheita de glória."
+  },
   {
     name: "Jonathan Edwards",
     era: "1703 – 1758",
@@ -661,7 +727,7 @@ const AUTHORS_DATABASE = [
     name: "Richard Sibbes",
     era: "1577 – 1635",
     desc: "Conhecido como 'O Doutor Celestial' por sua pregação calorosa sobre a ternura e doçura da graça de Cristo.",
-    worksCount: "4 Títulos no Catálogo",
+    worksCount: "5 Títulos no Catálogo",
     famousQuote: "Há em Cristo mais misericórdia do que pecado em nós."
   },
   {
@@ -709,7 +775,7 @@ const AUTHORS_DATABASE = [
 ];
 
 // ==========================================================================
-// CITAÇÕES PARA O CAROUSEL — usa CAROUSEL_QUOTES de citacoes.js (55 entradas)
+// CITAÇÕES PARA O CAROUSEL — usa CAROUSEL_QUOTES de citacoes.js (54 entradas)
 // PURITAN_QUOTES mantido como alias para compatibilidade
 // ==========================================================================
 const PURITAN_QUOTES = (typeof CAROUSEL_QUOTES !== 'undefined') ? CAROUSEL_QUOTES : [];
@@ -722,6 +788,16 @@ let currentPriceFilter = "all";
 let currentSort = "default";
 let currentSearch = "";
 let currentModalBookId = null;
+let lastFocusedBeforeModal = null;
+
+function escapeHtml(str) {
+  return String(str)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
 
 // Gerenciamento de Favoritos no LocalStorage
 function getFavorites() {
@@ -897,7 +973,7 @@ function renderBooks() {
     if (currentFilter === "favoritos") {
       resultsCounter.innerHTML = `Exibindo <strong>${filtered.length}</strong> de <strong>${favs.length}</strong> obras salvas nos favoritos`;
     } else if (currentSearch) {
-      resultsCounter.innerHTML = `Exibindo <strong>${filtered.length}</strong> resultados para "<em>${currentSearch}</em>" <button onclick="clearSearch()" class="btn-clear-search">Limpar busca ✕</button>`;
+      resultsCounter.innerHTML = `Exibindo <strong>${filtered.length}</strong> resultados para "<em>${escapeHtml(currentSearch)}</em>" <button onclick="clearSearch()" class="btn-clear-search">Limpar busca ✕</button>`;
     } else {
       resultsCounter.innerHTML = `Exibindo <strong>${filtered.length}</strong> de <strong>${BOOKS_DATABASE.length}</strong> obras publicadas`;
     }
@@ -919,6 +995,8 @@ function renderBooks() {
     const badgeClass = book.category === 'puritano' ? 'puritano' : (book.category === 'interlinear' ? 'interlinear' : 'idiomas');
     const amazonUrl = `https://www.amazon.com.br/dp/${book.asin}?tag=editorapactum-20`;
     const isFav = favs.includes(book.id);
+    const safeTitle = escapeHtml(book.title);
+    const thumbSrc = `capas/thumbs/${book.id}.webp`;
 
     return `
       <article class="book-card" data-id="${book.id}" style="animation-delay: ${Math.min(index * 0.04, 0.6)}s">
@@ -930,7 +1008,10 @@ function renderBooks() {
           <div class="book-cover-wrap" onclick="openBookModal('${book.id}')">
             <span class="book-badge ${badgeClass}">${book.categoryLabel}</span>
             <div class="book-glare"></div>
-            <img src="${book.cover}" alt="${book.title}" class="book-cover-img" loading="lazy">
+            <picture>
+              <source srcset="${thumbSrc}" type="image/webp">
+              <img src="${book.cover}" alt="${safeTitle}" class="book-cover-img" width="400" height="620" loading="lazy" decoding="async">
+            </picture>
             <div class="book-quick-view-overlay">
               <span class="quick-view-text">✦ Ver Detalhes ✦</span>
             </div>
@@ -1005,6 +1086,9 @@ function resetAllFilters() {
 // EFEITO 3D TILT COM REFLEXO DINÂMICO DE LUZ
 // ==========================================================================
 function attach3DTiltEffect() {
+  if (!window.matchMedia || !window.matchMedia("(hover: hover) and (pointer: fine)").matches) {
+    return;
+  }
   const cards = document.querySelectorAll(".book-card");
   cards.forEach(card => {
     const coverWrap = card.querySelector(".book-cover-wrap");
@@ -1012,28 +1096,40 @@ function attach3DTiltEffect() {
 
     if (!coverWrap) return;
 
+    let rafId = null;
+
     card.addEventListener("mousemove", (e) => {
-      const rect = card.getBoundingClientRect();
-      const x = e.clientX - rect.left;
-      const y = e.clientY - rect.top;
-      
-      const centerX = rect.width / 2;
-      const centerY = rect.height / 2;
-      
-      const rotateX = ((y - centerY) / centerY) * -9;
-      const rotateY = ((x - centerX) / centerX) * 9;
-      
-      card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-8px) scale3d(1.02, 1.02, 1.02)`;
-      
-      if (glare) {
-        const glareX = (x / rect.width) * 100;
-        const glareY = (y / rect.height) * 100;
-        glare.style.background = `radial-gradient(circle at ${glareX}% ${glareY}%, rgba(247, 223, 148, 0.35) 0%, rgba(201, 168, 76, 0) 75%)`;
-        glare.style.opacity = "1";
-      }
+      if (rafId) return;
+      const clientX = e.clientX;
+      const clientY = e.clientY;
+      rafId = window.requestAnimationFrame(() => {
+        rafId = null;
+        const rect = card.getBoundingClientRect();
+        const x = clientX - rect.left;
+        const y = clientY - rect.top;
+
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+
+        const rotateX = ((y - centerY) / centerY) * -9;
+        const rotateY = ((x - centerX) / centerX) * 9;
+
+        card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-8px) scale3d(1.02, 1.02, 1.02)`;
+
+        if (glare) {
+          const glareX = (x / rect.width) * 100;
+          const glareY = (y / rect.height) * 100;
+          glare.style.background = `radial-gradient(circle at ${glareX}% ${glareY}%, rgba(247, 223, 148, 0.35) 0%, rgba(201, 168, 76, 0) 75%)`;
+          glare.style.opacity = "1";
+        }
+      });
     });
 
     card.addEventListener("mouseleave", () => {
+      if (rafId) {
+        window.cancelAnimationFrame(rafId);
+        rafId = null;
+      }
       card.style.transform = "perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0) scale3d(1, 1, 1)";
       if (glare) {
         glare.style.opacity = "0";
@@ -1067,6 +1163,30 @@ function renderAuthors() {
       </div>
     `;
   }).join("");
+}
+
+function filterByCategory(category) {
+  playAudioFeedback("click");
+  currentFilter = category || "todos";
+  currentPriceFilter = "all";
+  currentSearch = "";
+
+  const searchInput = document.getElementById("searchInput");
+  if (searchInput) searchInput.value = "";
+
+  document.querySelectorAll(".filter-btn").forEach(btn => {
+    btn.classList.toggle("active", btn.dataset.filter === currentFilter);
+  });
+  document.querySelectorAll(".price-chip").forEach(chip => {
+    chip.classList.toggle("active", chip.dataset.price === "all");
+  });
+
+  renderBooks();
+
+  const catalogoSection = document.getElementById("catalogo");
+  if (catalogoSection) {
+    catalogoSection.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
 }
 
 function filterByAuthor(authorName) {
@@ -1182,14 +1302,19 @@ function openBookModal(bookId) {
   const bookIndex = BOOKS_DATABASE.findIndex(b => b.id === bookId);
   if (bookIndex < 0) return;
 
+  const modalOverlay = document.getElementById("modalOverlay");
+  const modalContent = document.getElementById("modalContent");
+  const modal = document.getElementById("modal");
+  if (!modalOverlay || !modalContent) return;
+
+  if (!modalOverlay.classList.contains("active")) {
+    lastFocusedBeforeModal = document.activeElement;
+  }
+
   currentModalBookId = bookId;
   const book = BOOKS_DATABASE[bookIndex];
 
   playAudioFeedback("open");
-
-  const modalOverlay = document.getElementById("modalOverlay");
-  const modalContent = document.getElementById("modalContent");
-  if (!modalOverlay || !modalContent) return;
 
   const amazonUrl = `https://www.amazon.com.br/dp/${book.asin}?tag=editorapactum-20`;
   const whatsappUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(`Conheça o livro "${book.title}" da Editora Pactum: ${amazonUrl}`)}`;
@@ -1214,7 +1339,7 @@ function openBookModal(bookId) {
     <div class="modal-body-grid">
       <div class="modal-cover-column">
         <div class="modal-cover-3d-wrap">
-          <img src="${book.cover}" alt="${book.title}" class="modal-cover-img">
+          <img src="${book.cover}" alt="${escapeHtml(book.title)}" class="modal-cover-img" decoding="async">
         </div>
         <div class="modal-cover-badges">
           <span class="ku-badge-modal">✓ Incluso no Kindle Unlimited (R$ 0,00)</span>
@@ -1229,7 +1354,7 @@ function openBookModal(bookId) {
           </button>
         </div>
 
-        <h2 class="modal-title">${book.title}</h2>
+        <h2 class="modal-title" id="modalBookTitle">${book.title}</h2>
         <div class="modal-author">por <strong>${book.author}</strong></div>
         
         <div class="modal-quote-highlight">
@@ -1292,8 +1417,17 @@ function openBookModal(bookId) {
     ${buildModalCitations(book.id)}
   `;
 
+  if (modal) {
+    modal.setAttribute("aria-labelledby", "modalBookTitle");
+    modal.scrollTop = 0;
+  }
+  const wasActive = modalOverlay.classList.contains("active");
   modalOverlay.classList.add("active");
   document.body.style.overflow = "hidden";
+  if (!wasActive) {
+    const closeBtn = document.getElementById("modalClose");
+    if (closeBtn) closeBtn.focus();
+  }
 }
 
 function updateModalFavButton() {
@@ -1369,6 +1503,10 @@ function closeBookModal() {
     modalOverlay.classList.remove("active");
     document.body.style.overflow = "";
     currentModalBookId = null;
+    if (lastFocusedBeforeModal && typeof lastFocusedBeforeModal.focus === "function") {
+      lastFocusedBeforeModal.focus();
+    }
+    lastFocusedBeforeModal = null;
   }
 }
 
@@ -1377,88 +1515,143 @@ function closeBookModal() {
 // ==========================================================================
 function initHeroCanvas() {
   const canvas = document.getElementById("heroCanvas");
+  const heroSection = document.getElementById("hero");
   if (!canvas) return;
 
   const ctx = canvas.getContext("2d");
-  let particles = [];
-  let mouse = { x: null, y: null, radius: 120 };
-  let width, height;
+  if (!ctx) return;
+
+  const reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const particles = [];
+  const mouse = { x: null, y: null, radius: 120 };
+  let width = 0;
+  let height = 0;
+  let animFrameId = null;
+  let isHeroVisible = true;
+
+  // Sprite pré-renderizado evita shadowBlur caro a cada quadro
+  const spriteSize = 32;
+  const sprite = document.createElement("canvas");
+  sprite.width = spriteSize;
+  sprite.height = spriteSize;
+  const sctx = sprite.getContext("2d");
+  const half = spriteSize / 2;
+  const grad = sctx.createRadialGradient(half, half, 0, half, half, half);
+  grad.addColorStop(0, "rgba(247, 223, 148, 1)");
+  grad.addColorStop(0.28, "rgba(247, 223, 148, 0.75)");
+  grad.addColorStop(0.65, "rgba(201, 168, 76, 0.2)");
+  grad.addColorStop(1, "rgba(201, 168, 76, 0)");
+  sctx.fillStyle = grad;
+  sctx.fillRect(0, 0, spriteSize, spriteSize);
 
   function resize() {
     width = canvas.width = window.innerWidth;
-    height = canvas.height = window.innerHeight;
+    height = canvas.height = (heroSection && heroSection.offsetHeight) ? heroSection.offsetHeight : window.innerHeight;
   }
   resize();
-  window.addEventListener("resize", resize);
 
-  window.addEventListener("mousemove", (e) => {
-    mouse.x = e.clientX;
-    mouse.y = e.clientY;
-  });
+  let resizeTimer = null;
+  window.addEventListener("resize", () => {
+    if (resizeTimer) clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(resize, 150);
+  }, { passive: true });
 
-  window.addEventListener("mouseleave", () => {
-    mouse.x = null;
-    mouse.y = null;
-  });
+  if (heroSection) {
+    heroSection.addEventListener("mousemove", (e) => {
+      mouse.x = e.clientX;
+      mouse.y = e.clientY;
+    }, { passive: true });
 
-  const count = Math.min(90, Math.floor(window.innerWidth / 15));
+    heroSection.addEventListener("mouseleave", () => {
+      mouse.x = null;
+      mouse.y = null;
+    }, { passive: true });
+  }
+
+  const count = Math.min(75, Math.max(24, Math.floor(window.innerWidth / 18)));
   for (let i = 0; i < count; i++) {
     particles.push({
       x: Math.random() * width,
       y: Math.random() * height,
-      size: Math.random() * 2.2 + 0.6,
+      size: Math.random() * 2.2 + 0.8,
       speedX: (Math.random() - 0.5) * 0.35,
       speedY: (Math.random() - 0.5) * 0.35 - 0.1,
       opacity: Math.random() * 0.7 + 0.25,
       pulse: Math.random() * 0.02 + 0.005,
-      pulseDir: 1,
-      baseSize: Math.random() * 2.2 + 0.6
+      pulseDir: 1
     });
+  }
+
+  function drawFrame(stepMotion) {
+    ctx.clearRect(0, 0, width, height);
+
+    for (let i = 0; i < particles.length; i++) {
+      const p = particles[i];
+      if (stepMotion) {
+        p.x += p.speedX;
+        p.y += p.speedY;
+
+        if (mouse.x !== null && mouse.y !== null) {
+          const dx = mouse.x - p.x;
+          const dy = mouse.y - p.y;
+          const dist = Math.sqrt(dx * dx + dy * dy);
+          if (dist < mouse.radius) {
+            const force = (mouse.radius - dist) / mouse.radius;
+            p.x += dx * force * 0.02;
+            p.y += dy * force * 0.02;
+          }
+        }
+
+        if (p.x < 0) p.x = width;
+        if (p.x > width) p.x = 0;
+        if (p.y < 0) p.y = height;
+        if (p.y > height) p.y = 0;
+
+        p.opacity += p.pulse * p.pulseDir;
+        if (p.opacity > 0.9) p.pulseDir = -1;
+        if (p.opacity < 0.2) p.pulseDir = 1;
+      }
+
+      const drawRadius = p.size * 4.2;
+      ctx.globalAlpha = p.opacity;
+      ctx.drawImage(sprite, p.x - drawRadius, p.y - drawRadius, drawRadius * 2, drawRadius * 2);
+    }
+    ctx.globalAlpha = 1;
   }
 
   function animate() {
-    ctx.clearRect(0, 0, width, height);
-
-    particles.forEach(p => {
-      // Movimento básico
-      p.x += p.speedX;
-      p.y += p.speedY;
-
-      // Interação gravitacional suave com o mouse
-      if (mouse.x !== null && mouse.y !== null) {
-        const dx = mouse.x - p.x;
-        const dy = mouse.y - p.y;
-        const dist = Math.sqrt(dx * dx + dy * dy);
-        if (dist < mouse.radius) {
-          const force = (mouse.radius - dist) / mouse.radius;
-          p.x += dx * force * 0.02;
-          p.y += dy * force * 0.02;
-        }
-      }
-
-      // Wrap em torno da tela
-      if (p.x < 0) p.x = width;
-      if (p.x > width) p.x = 0;
-      if (p.y < 0) p.y = height;
-      if (p.y > height) p.y = 0;
-
-      // Pulso luminoso
-      p.opacity += p.pulse * p.pulseDir;
-      if (p.opacity > 0.9) p.pulseDir = -1;
-      if (p.opacity < 0.2) p.pulseDir = 1;
-
-      // Desenho da partícula
-      ctx.beginPath();
-      ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
-      ctx.fillStyle = `rgba(247, 223, 148, ${p.opacity})`;
-      ctx.shadowBlur = 10;
-      ctx.shadowColor = "rgba(201, 168, 76, 0.7)";
-      ctx.fill();
-    });
-
-    requestAnimationFrame(animate);
+    if (!isHeroVisible || document.hidden) {
+      animFrameId = null;
+      return;
+    }
+    drawFrame(true);
+    animFrameId = window.requestAnimationFrame(animate);
   }
-  animate();
+
+  function startIfActive() {
+    if (!reduceMotion && isHeroVisible && !document.hidden && animFrameId === null) {
+      animFrameId = window.requestAnimationFrame(animate);
+    }
+  }
+
+  if (reduceMotion) {
+    drawFrame(false);
+    return;
+  }
+
+  if (heroSection && "IntersectionObserver" in window) {
+    const observer = new IntersectionObserver((entries) => {
+      isHeroVisible = entries[0].isIntersecting;
+      if (isHeroVisible) startIfActive();
+    }, { threshold: 0.01 });
+    observer.observe(heroSection);
+  }
+
+  document.addEventListener("visibilitychange", () => {
+    if (!document.hidden) startIfActive();
+  });
+
+  startIfActive();
 }
 
 // ==========================================================================
@@ -1466,15 +1659,24 @@ function initHeroCanvas() {
 // ==========================================================================
 function initStatsCounter() {
   const statNumbers = document.querySelectorAll(".stat-number");
+  const reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   let animated = false;
+
+  if (reduceMotion) {
+    statNumbers.forEach(stat => {
+      stat.textContent = parseInt(stat.dataset.count, 10);
+    });
+    return;
+  }
 
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting && !animated) {
         animated = true;
+        observer.disconnect();
         statNumbers.forEach(stat => {
           const target = parseInt(stat.dataset.count, 10);
-          const duration = 2000;
+          const duration = 1400;
           const stepTime = 20;
           const steps = duration / stepTime;
           const increment = target / steps;
@@ -1483,7 +1685,7 @@ function initStatsCounter() {
           const timer = setInterval(() => {
             current += increment;
             if (current >= target) {
-              stat.textContent = target + (target === 32 ? "+" : (target === 15 ? "+" : ""));
+              stat.textContent = target;
               clearInterval(timer);
             } else {
               stat.textContent = Math.floor(current);
@@ -1499,56 +1701,40 @@ function initStatsCounter() {
 }
 
 // ==========================================================================
-// PROGRESSO DE SCROLL & BOTÃO VOLTAR AO TOPO
-// ==========================================================================
-function initScrollProgress() {
-  const backToTopBtn = document.getElementById("backToTopBtn");
-  const progressCircle = document.getElementById("scrollProgressCircle");
-
-  window.addEventListener("scroll", () => {
-    const scrollTop = window.scrollY || document.documentElement.scrollTop;
-    const docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    const scrollPercent = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
-
-    if (progressCircle) {
-      const circumference = 2 * Math.PI * 18; // r=18
-      const offset = circumference - (scrollPercent / 100) * circumference;
-      progressCircle.style.strokeDashoffset = offset;
-    }
-
-    if (backToTopBtn) {
-      if (scrollTop > 400) {
-        backToTopBtn.classList.add("visible");
-      } else {
-        backToTopBtn.classList.remove("visible");
-      }
-    }
-  });
-
-  if (backToTopBtn) {
-    backToTopBtn.addEventListener("click", () => {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    });
-  }
-}
-
-// ==========================================================================
 // INICIALIZAÇÃO & EVENTOS
 // ==========================================================================
 document.addEventListener("DOMContentLoaded", () => {
-  // 1. Renderiza Catálogo, Autores e Favoritos
+  // 1. Lê parâmetro ?q= da URL (SearchAction) ou #book-id antes de renderizar
+  const urlParams = new URLSearchParams(window.location.search);
+  const queryParam = urlParams.get("q");
+  const searchInput = document.getElementById("searchInput");
+  if (queryParam && queryParam.trim()) {
+    currentSearch = queryParam.trim();
+    if (searchInput) searchInput.value = currentSearch;
+  }
+
+  // 2. Renderiza Catálogo, Autores e Favoritos
   renderBooks();
   renderAuthors();
   updateFavCounters();
   initQuotesCarousel();
 
-  // 2. Inicializa Canvas, Contadores e Scroll
+  // Abre modal ou rola para catálogo quando acessado via deep link (?q= ou #book-id)
+  if (currentSearch) {
+    const catalogoEl = document.getElementById("catalogo");
+    if (catalogoEl) catalogoEl.scrollIntoView({ behavior: "smooth", block: "start" });
+  } else if (window.location.hash && window.location.hash.length > 1) {
+    const hashId = window.location.hash.slice(1);
+    if (BOOKS_DATABASE.some(b => b.id === hashId)) {
+      openBookModal(hashId);
+    }
+  }
+
+  // 3. Inicializa Canvas e Contadores (scroll e navbar gerenciados por common.js)
   initHeroCanvas();
   initStatsCounter();
-  initScrollProgress();
 
-  // 3. Campo de Busca Instantânea
-  const searchInput = document.getElementById("searchInput");
+  // 4. Campo de Busca Instantânea
   if (searchInput) {
     searchInput.addEventListener("input", (e) => {
       currentSearch = e.target.value;
@@ -1624,34 +1810,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // 8. Navbar Scrolled Effect
-  const navbar = document.getElementById("navbar");
-  window.addEventListener("scroll", () => {
-    if (window.scrollY > 40) {
-      navbar.classList.add("scrolled");
-    } else {
-      navbar.classList.remove("scrolled");
-    }
-  });
-
-  // 9. Menu Mobile Toggle
-  const navToggle = document.getElementById("navToggle");
-  const navLinks = document.getElementById("navLinks");
-  if (navToggle && navLinks) {
-    navToggle.addEventListener("click", () => {
-      navLinks.classList.toggle("open");
-      navToggle.classList.toggle("open");
-    });
-
-    navLinks.querySelectorAll("a").forEach(link => {
-      link.addEventListener("click", () => {
-        navLinks.classList.remove("open");
-        navToggle.classList.remove("open");
-      });
-    });
-  }
-
-  // 10. Botão de Som
+  // 8. Botão de Som
   const soundToggleBtn = document.getElementById("soundToggleBtn");
   if (soundToggleBtn) {
     soundToggleBtn.addEventListener("click", toggleSound);

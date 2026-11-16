@@ -40,6 +40,9 @@ asins = [
     ("edwards-qualificacoes-comunhao", "B0HG7S6N5S"),
     ("edwards-verdadeira-graca", "B0HGBSD579"),
     ("swinnock-porta-salvacao", "B0H271D3F4"),
+    ("keach-manifestacao-gloriosa-graca", "B0HRQS82WN"),
+    ("sibbes-desviado-que-retorna", "B0HRQNVW9M"),
+    ("love-cura-alma-abatida", "B0HRQGLHKS"),
 ]
 
 headers = {

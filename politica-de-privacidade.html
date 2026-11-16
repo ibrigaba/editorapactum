@@ -23,13 +23,13 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
   
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
   <link rel="shortcut icon" href="favicon.ico">
   
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=20261116">
 
   <!-- Schema.org Breadcrumb -->
   <script type="application/ld+json">
@@ -59,7 +59,10 @@
   <nav class="navbar" id="navbar">
     <div class="nav-container">
       <a href="/" class="nav-logo">
-        <img src="logo.png" alt="Editora Pactum" class="nav-logo-img">
+        <picture>
+          <source srcset="logo.webp" type="image/webp">
+          <img src="logo.png" alt="Editora Pactum" class="nav-logo-img" width="44" height="44" decoding="async">
+        </picture>
         <div class="nav-brand-text">
           <span class="nav-logo-text">Editora Pactum</span>
           <span class="nav-logo-sub">Tradição & Exegese</span>
@@ -78,6 +81,9 @@
         <a href="/#catalogo" class="btn btn-primary" style="padding: 8px 16px; font-size: 0.9rem;">
           <span>Ver Livros</span> 📚
         </a>
+        <button class="nav-toggle" id="navToggle" aria-label="Menu Principal">
+          <span></span><span></span><span></span>
+        </button>
       </div>
     </div>
   </nav>
@@ -205,7 +211,10 @@
         <div class="footer-grid">
           <div class="footer-brand">
             <div class="footer-brand-header">
-              <img src="logo.png" alt="Editora Pactum" class="footer-logo">
+              <picture>
+                <source srcset="logo.webp" type="image/webp">
+                <img src="logo.png" alt="Editora Pactum" class="footer-logo" width="44" height="44" loading="lazy" decoding="async">
+              </picture>
               <h3>EDITORA PACTUM</h3>
             </div>
             <p>Tradição Teológica Reformada & Exegese dos Textos Originais.</p>
@@ -228,7 +237,7 @@
               <li><a href="/artigo-legado-puritano.html">O Legado Puritano</a></li>
               <li><a href="/artigo-biblia-interlinear-exegese.html">Bíblias Interlineares</a></li>
               <li><a href="/artigo-contentamento-thomas-watson.html">A Arte do Contentamento</a></li>
-              <li><a href="/#catalogo">Catálogo Completo (36 Obras)</a></li>
+              <li><a href="/#catalogo">Catálogo Completo (39 Obras)</a></li>
             </ul>
           </div>
 
@@ -250,5 +259,6 @@
     </div>
   </footer>
 
+  <script defer src="common.js?v=20261116"></script>
 </body>
 </html>

@@ -1,6 +1,6 @@
 /**
  * EDITORA PACTUM — CITAÇÕES EXTRAÍDAS DOS EBOOKS (gerado automaticamente)
- * Livros: 14 | Modal: 84 | Carousel: 42
+ * Livros: 21 | Modal: 126 | Carousel: 54
  */
 
 const CITACOES_POR_LIVRO = {
@@ -166,9 +166,45 @@ const CITACOES_POR_LIVRO = {
  "A conversão genuína muda o leito dos rios dos afetos humanos, voltando as correntes do coração para o oceano do amor divino.",
  ],
 
+ "keach-manifestacao-gloriosa-graca": [
+ "Deus primeiro escolheu seu Filho como o Representante, Cabeça Pactual e Fiador dos seus eleitos, e então tratou com Ele sobre os termos da nossa Paz.",
+ "Foi a livre graça de Deus Pai dignar-se a nos conceder um Substituto, um Salvador, um Mediador desta Paz, e escolher, ordenar e designar Seu próprio Filho para ser a Pessoa, e aceitá-Lo em nosso lugar.",
+ "O próprio nome \"Pacto da Paz\" importa isto: não haveria necessidade de paz se não houvesse uma guerra, ou uma terrível ruptura entre Deus e nós.",
+ "Cristo deve transformar o coração do pecador mediante a infusão do Seu Espírito e, assim, unir a alma a Si mesmo, por meio do que Ele introduz o pecador nos vínculos do Pacto.",
+ "Visto que todas as promessas de Deus nos são feitas em Cristo, Ele também se comprometeu a garantir que perseveremos na graça e na santidade, e que jamais nos apartaremos finalmente de Deus.",
+ "Ó, como o amor e as entranhas de misericórdia moveram-se em nossa direção no coração de Deus Pai desde a eternidade!",
+ ],
+
+ "sibbes-desviado-que-retorna": [
+ "Deus concede a justificação antes da santificação; e, antes de libertar da culpa do pecado, Ele concede graça para confessar o pecado.",
+ "Se um homem não for profundamente humilhado com a visão de seus pecados, sua fé será mais fraca, e sua santificação e consolo serão mais superficiais.",
+ "Onde não há senso de pecado e humilhação, e, a partir disso, oração a Deus por perdão, com reforma e confiança em Sua misericórdia, ali a ira de Deus permanece.",
+ "Não falemos, portanto, de amor a Deus, de piedade e coisas semelhantes; pois, se houver qualquer graça ou comunhão com Deus, odiaremos todo pecado na mesma medida em que Deus o odeia.",
+ "Deus e o propósito de pecar não podem coexistir, nem habitar em um coração que se permite qualquer pecado, por menor que seja.",
+ "Deus não perdoa o pecado quando este não é visto, lamentado nem confessado, e onde não há algum grau de fé para vir a Deus, \"o Pai dos órfãos\" e o grande Médico das almas.",
+ ],
+
+ "love-cura-alma-abatida": [
+ "Se há fé em ti, se há graça em tua alma, ainda que seja apenas como um grão de mostarda, uma pequena graça que brotou na alma brotará em tua alma para uma colheita de glória como tua recompensa.",
+ "Este é um argumento da verdadeira graça: quando a alma se humilha por pecados interiores, secretos e do coração.",
+ "Quando um homem oculta o seu pecado, isso perturba a sua alma, fere o seu coração e quebra a sua paz; se tu queres quebrar a Lei de Deus, é justo e reto da parte de Deus quebrar a tua paz.",
+ "Embora Deus não faça promessas aos pecadores enquanto permanecem apenas em seu estado natural, Ele faz promessas aos pecadores à medida que possuem graça, por mais fraca e pequena que seja.",
+ "Embora o povo de Deus possua a graça, creia e tenha seus pecados perdoados, a percepção desse perdão, a consciência dessa fé e a plena certeza dessa graça não são essenciais à existência da vida espiritual.",
+ "Quando os homens se acostumam de tal maneira ao pecado, de modo que este endurece o coração e cauteriza a consciência, não é de se admirar que não sejam, de forma alguma, abatidos pelo pecado.",
+ ],
+
 };
 
 const CAROUSEL_QUOTES = [
+ { quote: "Deus primeiro escolheu seu Filho como o Representante, Cabeça Pactual e Fiador dos seus eleitos, e então tratou com Ele sobre os termos da nossa Paz.", author: "Benjamin Keach", book: "A Manifestação da Gloriosa Graça", bookId: "keach-manifestacao-gloriosa-graca" },
+ { quote: "Deus concede a justificação antes da santificação; e, antes de libertar da culpa do pecado, Ele concede graça para confessar o pecado.", author: "Richard Sibbes", book: "O Desviado que Retorna", bookId: "sibbes-desviado-que-retorna" },
+ { quote: "Se há fé em ti, se há graça em tua alma, ainda que seja apenas como um grão de mostarda, uma pequena graça que brotou na alma brotará em tua alma para uma colheita de glória como tua recompensa.", author: "Christopher Love", book: "A Cura da Alma Abatida", bookId: "love-cura-alma-abatida" },
+ { quote: "Foi a livre graça de Deus Pai dignar-se a nos conceder um Substituto, um Salvador, um Mediador desta Paz, e escolher, ordenar e designar Seu próprio Filho para ser a Pessoa, e aceitá-Lo em nosso lugar.", author: "Benjamin Keach", book: "A Manifestação da Gloriosa Graça", bookId: "keach-manifestacao-gloriosa-graca" },
+ { quote: "Se um homem não for profundamente humilhado com a visão de seus pecados, sua fé será mais fraca, e sua santificação e consolo serão mais superficiais.", author: "Richard Sibbes", book: "O Desviado que Retorna", bookId: "sibbes-desviado-que-retorna" },
+ { quote: "Este é um argumento da verdadeira graça: quando a alma se humilha por pecados interiores, secretos e do coração.", author: "Christopher Love", book: "A Cura da Alma Abatida", bookId: "love-cura-alma-abatida" },
+ { quote: "Visto que todas as promessas de Deus nos são feitas em Cristo, Ele também se comprometeu a garantir que perseveremos na graça e na santidade, e que jamais nos apartaremos finalmente de Deus.", author: "Benjamin Keach", book: "A Manifestação da Gloriosa Graça", bookId: "keach-manifestacao-gloriosa-graca" },
+ { quote: "Deus e o propósito de pecar não podem coexistir, nem habitar em um coração que se permite qualquer pecado, por menor que seja.", author: "Richard Sibbes", book: "O Desviado que Retorna", bookId: "sibbes-desviado-que-retorna" },
+ { quote: "Quando um homem oculta o seu pecado, isso perturba a sua alma, fere o seu coração e quebra a sua paz; se tu queres quebrar a Lei de Deus, é justo e reto da parte de Deus quebrar a tua paz.", author: "Christopher Love", book: "A Cura da Alma Abatida", bookId: "love-cura-alma-abatida" },
  { quote: "Quando Deus está prestes a conceder grandes misericórdias à Sua Igreja, é Sua vontade que isso seja precedido por orações extraordinárias do Seu povo.", author: "Jonathan Edwards", book: "Uma Humilde Tentativa", bookId: "edwards-humilde-tentativa" },
  { quote: "Crer nas doutrinas meramente pela força da especulação intelectual não é evidência de graça. Os demônios creem e tremem; a verdadeira graça consiste no amor santo a Deus.", author: "Jonathan Edwards", book: "A Verdadeira Graça", bookId: "edwards-verdadeira-graca" },
  { quote: "A mesa do Senhor pertence àqueles que professam abertamente um devido amor a Cristo em seus corações, e não apenas uma opinião correta em seus juízos.", author: "Jonathan Edwards", book: "Qualificações para a Comunhão", bookId: "edwards-qualificacoes-comunhao" },

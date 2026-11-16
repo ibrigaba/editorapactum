@@ -5,7 +5,7 @@
   <!-- Página Principal (SPA — página única) -->
   <url>
     <loc>https://www.editorapactum.com.br/</loc>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
 
@@ -87,12 +87,27 @@
       <image:title>Um Chamado aos Não Convertidos — Richard Baxter</image:title>
       <image:caption>Capa do livro Um Chamado aos Não Convertidos de Richard Baxter</image:caption>
     </image:image>
+    <image:image>
+      <image:loc>https://www.editorapactum.com.br/capas/keach-manifestacao-gloriosa-graca.jpg</image:loc>
+      <image:title>A Manifestação da Gloriosa Graça: Exposição do Pacto da Paz — Benjamin Keach</image:title>
+      <image:caption>Capa do livro A Manifestação da Gloriosa Graça de Benjamin Keach, Clássicos Puritanos e Teologia Pactual</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.editorapactum.com.br/capas/sibbes-desviado-que-retorna.jpg</image:loc>
+      <image:title>O Desviado que Retorna: Misericórdia e Restauração em Oseias 14 — Richard Sibbes</image:title>
+      <image:caption>Capa do livro O Desviado que Retorna de Richard Sibbes, Clássicos Puritanos</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.editorapactum.com.br/capas/love-cura-alma-abatida.jpg</image:loc>
+      <image:title>A Cura da Alma Abatida: Dezessete Sermões sobre o Salmo 42:11 — Christopher Love</image:title>
+      <image:caption>Capa do livro A Cura da Alma Abatida de Christopher Love, Clássicos Puritanos</image:caption>
+    </image:image>
   </url>
 
   <!-- Quem Somos / Sobre a Editora -->
   <url>
     <loc>https://www.editorapactum.com.br/sobre.html</loc>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -100,7 +115,7 @@
   <!-- Artigo: O Legado da Teologia Puritana -->
   <url>
     <loc>https://www.editorapactum.com.br/artigo-legado-puritano.html</loc>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -139,7 +154,7 @@
   <!-- Artigo: Jonathan Edwards e o Discernimento Espiritual -->
   <url>
     <loc>https://www.editorapactum.com.br/artigo-verdadeira-graca-edwards.html</loc>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -152,7 +167,7 @@
   <!-- Fale Conosco / Contato -->
   <url>
     <loc>https://www.editorapactum.com.br/contato.html</loc>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -160,7 +175,7 @@
   <!-- Política de Privacidade (Obrigatória AdSense) -->
   <url>
     <loc>https://www.editorapactum.com.br/politica-de-privacidade.html</loc>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -168,7 +183,7 @@
   <!-- Termos de Uso -->
   <url>
     <loc>https://www.editorapactum.com.br/termos-de-uso.html</loc>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
